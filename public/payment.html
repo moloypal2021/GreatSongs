@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Taiwlind CSS -->
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header class="fixed inset-x-0 top-0 z-50 bg-white">
+        <div class="container py-5 lg:py-8 xl:pt-11">
+            <nav class="flex items-center justify-between">
+                <a href="#" class="inline-block"><img src="./assets/images/greatsong-logo.svg" alt=""
+                        class="h-[30px] md:h-10"></a>
+
+                <button class="lg:hidden">
+                    <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.07263H19" stroke="#E00050" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1 7.43152H19" stroke="#E00050" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1 13.7905H19" stroke="#E00050" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Payment Section Start -->
+    <section class="container" x-data="{step:1, plan: 0}">
+
+        <!-- Pricing -->
+        <div class="mb-[87px] sm:mb-28 md:mb-32 lg:mb-[210px] mt-[120px] sm:mt-36 md:mt-44 lg:mt-[236px]"
+            x-show="step === 1" style="display: none;">
+            <h1
+                class="text-[28px] md:text-3xl lg:text-4xl leading-[38px] text-center font-bold font-manrope text-black mb-5 md:mb-4">
+                Com uma só
+                assinatura, <br>
+                tenha acesso completo a todos os conteúdos!</h1>
+            <p
+                class="text-sm md:text-base font-sintony text-gray-3 text-center max-w-[690px] mx-auto mb-[58px] lg:mb-[18px]">
+                Tenha
+                acesso
+                imediato
+                às aulas e aos cursos, aprenda onde e como quiser e descubra, finalmente,tudo o que você pode conquistar
+                com a música e novos idiomas</p>
+
+            <div class="relative">
+                <div class="absolute inset-0 hidden lg:flex justify-center">
+                    <img src="./assets/images/pricing-bg.svg" alt="" class="w-full h-full max-w-[974px] min-w-[974px]">
+                </div>
+                <div class="relative lg:pb-10 lg:pt-[117px]">
+                    <div class="grid lg:grid-cols-3 gap-8 items-center mb-9 lg:mb-32">
+                        <div class="bg-white rounded-[20px] shadow-1 px-5 pt-5 lg:pt-10 pb-9 lg:pb-5">
+                            <div class="flex lg:flex-col items-center justify-between lg:space-y-16 mb-5 lg:mb-10">
+                                <div class="lg:text-center">
+                                    <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
+                                        Plano
+                                    </h1>
+                                    <h1
+                                        class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
+                                        Mensal
+                                    </h1>
+                                </div>
+
+                                <div class="flex items-end">
+                                    <p class="text-base font-bold text-black font-sintony mb-1">R$</p>
+                                    <p
+                                        class="text-[42px] md:text-5xl leading-[45px] lg:leading-[52px] font-bold text-black font-sintony">
+                                        29,97
+                                    </p>
+                                    <p class="text-base font-bold text-black font-sintony mb-1">/mês</p>
+                                </div>
+                            </div>
+                            <a href="#" @click.prevent="step = 2; plan = 1"
+                                class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1">Escolha
+                                este plano</a>
+                        </div>
+                        <div
+                            class="bg-white rounded-[20px] shadow-1 px-5 pt-5 lg:pt-10 pb-9 lg:pb-5 relative lg:overflow-hidden">
+                            <div class="absolute inset-x-0 top-0 text-center -translate-y-1/2 lg:hidden">
+                                <div
+                                    class="px-5 py-1 text-xs font-bold text-white font-sintony bg-orange-1 rounded-[5px] inline-block mx-auto">
+                                    Popular</div>
+                            </div>
+                            <div
+                                class="absolute right-0 top-0 text-center rotate-45 translate-y-6 translate-x-16 hidden lg:block">
+                                <div
+                                    class="px-20 py-1 text-xs font-bold text-white font-sintony bg-orange-1 inline-block">
+                                    Popular</div>
+                            </div>
+                            <div class="flex lg:flex-col items-center justify-between lg:space-y-12 mb-5 lg:mb-[90px]">
+                                <div class="lg:text-center">
+                                    <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
+                                        Plano
+                                    </h1>
+                                    <h1
+                                        class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
+                                        Anual
+                                    </h1>
+                                </div>
+
+                                <div>
+                                    <div class="flex items-center justify-center mb-0.5 lg:mb-px">
+                                        <div class="text-right">
+                                            <p class="text-xs font-bold text-black font-sintony mb-1">até 12x</p>
+                                            <p class="text-xs font-bold text-black font-sintony">de R$</p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class="text-[40px] md:text-5xl leading-[52px] lg:leading-[62px] font-bold text-black font-sintony">
+                                                19,97
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm md:text-base font-bold text-red-1 font-sintony text-center">R$
+                                        0,66 por dia
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="#" @click.prevent="step = 2; plan = 2"
+                                class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1">Escolha
+                                este plano</a>
+                        </div>
+                        <div class="bg-white rounded-[20px] shadow-1 px-5 pt-5 lg:pt-10 pb-9 lg:pb-5">
+                            <div class="flex lg:flex-col items-center justify-between lg:space-y-11 mb-5 lg:mb-12">
+                                <div class="lg:text-center">
+                                    <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
+                                        Plano
+                                    </h1>
+                                    <h1
+                                        class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
+                                        Semestral
+                                    </h1>
+                                </div>
+
+
+                                <div class="flex items-center justify-center">
+                                    <div class="text-right">
+                                        <p class="text-xs font-bold text-black font-sintony mb-1">6x</p>
+                                        <p class="text-xs font-bold text-black font-sintony">de R$</p>
+                                    </div>
+                                    <div class="">
+                                        <p
+                                            class="text-[40px] md:text-5xl leading-[52px] lg:leading-[62px] font-bold text-black font-sintony">
+                                            24,97
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" @click.prevent="step = 2; plan = 3"
+                                class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1">Escolha
+                                este plano</a>
+                        </div>
+                    </div>
+                    <p class="text-base text-center font-bold text-gray-3 font-sintony">Pagamento 100% seguro </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Payment -->
+        <div class="mb-[155px] mt-[90px] md:mt-28 lg:mt-36" x-show="step === 2" style="display: none;">
+            <h4 class="text-xl md:text-2xl font-bold font-manrope text-black mb-2.5 md:mb-3.5">Complete subscription
+            </h4>
+            <p class="text-sm md:text-base md:leading-5 text-gray-3 mb-[50px] md:mb-[38px] font-sintony">Make the
+                payment,
+                activate your
+                subscription and start
+                learning languages</p>
+            <div class="" x-data="{openTab:1}">
+                <div class="flex items-center justify-center lg:justify-start mb-8 md:mb-[26px]">
+                    <button class="group" @click="openTab = 1">
+                        <div class="flex items-center space-x-2.5 pb-3 pl-1 pr-6 text-base font-manrope font-bold group-hover:text-black transition-all"
+                            :class="openTab === 1 ? 'text-black' : 'text-gray-4'">
+                            <img src="./assets/images/credit-card.svg" alt="" class="w-5">
+                            <span>Credit Card</span>
+                        </div>
+                        <div class="w-full h-px transition-all" :class="openTab === 1 ? 'bg-red-1' : 'bg-gray'"></div>
+                    </button>
+                    <button class="group" @click="openTab = 2">
+                        <div class="flex items-center space-x-2.5 pb-3 px-6 text-base font-manrope font-bold group-hover:text-black transition-all"
+                            :class="openTab === 2 ? 'text-black' : 'text-gray-4'">
+                            <img src="./assets/images/card.svg" alt="" class="w-5">
+                            <span>PayPal</span>
+                        </div>
+                        <div class="w-full h-px transition-all" :class="openTab === 2 ? 'bg-red-1' : 'bg-gray'"></div>
+                    </button>
+                </div>
+
+                <div class="grid lg:grid-cols-8 gap-10 lg:gap-[34px]">
+                    <div class="lg:col-span-5 order-2 lg:order-1">
+                        <div class="border border-red-1 py-[30px] px-4 md:p-[30px] rounded-[10px] mb-[50px]"
+                            x-show="openTab === 1" style="display: none;">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-2.5 text-base font-bold font-manrope text-black">
+                                    <img src="./assets/images/credit-card.svg" alt="" class="w-5">
+                                    <span>Credit Card</span>
+                                </div>
+
+                                <div class="hidden lg:flex items-center space-x-2.5">
+                                    <img src="./assets/images/visa.svg" alt="" class="w-6">
+                                    <img src="./assets/images/american-express.svg" alt="" class="w-6">
+                                    <img src="./assets/images/discover.svg" alt="" class="w-6">
+                                </div>
+                            </div>
+                            <p class="text-sm text-gray-3 font-sintony mb-7">Safe money transfer using your bank
+                                Account.
+                                Visa,
+                                Discover, American Expresso </p>
+
+                            <form action="">
+                                <div class="mb-5">
+                                    <label class="text-sm font-bold font-manrope text-gray-3 leading-5 mb-1">Name
+                                        printed on card</label>
+                                    <input type="text"
+                                        class="text-sm px-4 py-3 border-[0.5px] border-gray-4 w-full rounded-md">
+                                </div>
+                                <div class="mb-5">
+                                    <label class="text-sm font-bold font-manrope text-gray-3 leading-5 mb-1">Card
+                                        number</label>
+                                    <input type="text"
+                                        class="text-sm px-4 py-3 border-[0.5px] border-gray-4 w-full rounded-md">
+                                </div>
+
+                                <div class="mb-5">
+                                    <label class="text-sm font-bold font-manrope text-gray-3 leading-5 mb-1">Card
+                                        number</label>
+                                    <div class="grid md:grid-cols-2 gap-4 md:gap-2">
+                                        <select name="" id=""
+                                            class="text-sm text-gray-4 px-4 py-3 border border-gray-4 w-full rounded-md">
+                                            <option value="" disabled selected>MM</option>
+                                            <option value="">01</option>
+                                            <option value="">02</option>
+                                            <option value="">03</option>
+                                            <option value="">04</option>
+                                        </select>
+                                        <select name="" id=""
+                                            class="text-sm text-gray-4 px-4 py-3 border border-gray-4 w-full rounded-md">
+                                            <option value="" disabled selected>YYYY</option>
+                                            <option value="">2018</option>
+                                            <option value="">2019</option>
+                                            <option value="">2020</option>
+                                            <option value="">2021</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-[52px]">
+                                    <label
+                                        class="text-sm font-bold font-manrope text-gray-3 leading-5 mb-1">Installments</label>
+                                    <input type="text"
+                                        class="text-sm px-4 py-3 border-[0.5px] border-gray-4 w-full rounded-md"
+                                        value="12 installments of R$ 19.97 without interest">
+                                </div>
+
+                                <div class="mb-16">
+                                    <h6 class="text-base font-bold text-gray-2 font-manrope mb-2.5">Cardholder data</h6>
+                                    <div class="grid lg:grid-cols-2 gap-2 lg:gap-2.5">
+                                        <div class="">
+                                            <label
+                                                class="text-sm font-bold font-manrope text-gray-3 leading-5 mb-1">CPF</label>
+                                            <input type="text"
+                                                class="text-sm px-4 py-3 border-[0.5px] border-gray-4 w-full rounded-md">
+                                        </div>
+                                        <div class="">
+                                            <label
+                                                class="text-sm font-bold font-manrope text-gray-3 leading-5 mb-1">Phone
+                                                number</label>
+                                            <input type="text"
+                                                class="text-sm px-4 py-3 border-[0.5px] border-gray-4 w-full rounded-md">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="border-t-[0.5px] border-gray-5 pt-7">
+                                <div class="lg:w-1/2">
+                                    <h5 class="text-xl font-bold text-gray-2 font-manrope mb-4">Summary</h5>
+                                    <div class="flex items-center justify-between mb-4">
+                                        <p class="text-sm font-manrope text-gray-3">Plan</p>
+                                        <p class="text-sm font-manrope text-gray-3">Yearly</p>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-4">
+                                        <p class="text-sm font-manrope text-gray-3">Installments</p>
+                                        <p class="text-sm font-manrope text-gray-3">12 installments of BRL 19.97</p>
+                                    </div>
+
+                                    <div class="border-t-[0.5px] border-gray-5 pt-4 flex items-center justify-between">
+                                        <p class="text-base font-bold text-gray-1 font-manrope">Total</p>
+                                        <p class="text-base font-bold text-gray-1 font-manrope">€ 239.64</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border border-red-1 py-[30px] px-4 md:p-[30px] rounded-[10px] mb-[50px]"
+                            x-show="openTab === 2" style="display: none;">
+
+                            <div class="w-full h-96">
+                                <h1 class="text-4xl text-center font-bold font-manrope">Paypal Payment Goes here</h1>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="#"
+                                class="text-base text-white font-sintony font-bold py-4 px-7 bg-red-1 border border-red-1 rounded-full inline-block">Complete
+                                the Payment</a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 order-1 lg:order-2">
+                        <div class="lg:bg-red-1/[0.24] lg:p-7 rounded-[10px]">
+                            <div class="bg-white rounded-[20px] shadow-1 px-5 pt-5 lg:pt-10 pb-9 lg:pb-5"
+                                x-show="plan === 1" style="display: none;">
+                                <div class="flex lg:flex-col items-center justify-between lg:space-y-16 mb-5 lg:mb-10">
+                                    <div class="lg:text-center">
+                                        <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
+                                            Plano
+                                        </h1>
+                                        <h1
+                                            class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
+                                            Mensal
+                                        </h1>
+                                    </div>
+
+                                    <div class="flex items-end">
+                                        <p class="text-base font-bold text-black font-sintony mb-1">R$</p>
+                                        <p
+                                            class="text-[42px] md:text-5xl leading-[45px] lg:leading-[52px] font-bold text-black font-sintony">
+                                            29,97
+                                        </p>
+                                        <p class="text-base font-bold text-black font-sintony mb-1">/mês</p>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1">Escolha
+                                    este plano</a>
+                            </div>
+
+                            <div class="w-full bg-white shadow-1 rounded-[20px] relative p-5 pb-2.5 lg:pt-12 lg:pb-5 lg:px-5"
+                                x-show="plan === 2" style="display: none">
+                                <div class="absolute inset-x-0 top-0 text-center -translate-y-1/2 lg:hidden">
+                                    <div
+                                        class="px-5 py-1 text-xs font-bold text-white font-sintony bg-orange-1 rounded-[5px] inline-block mx-auto">
+                                        Popular</div>
+                                </div>
+                                <div
+                                    class="flex lg:flex-col items-center justify-between lg:space-y-12 mb-5 lg:mb-[90px]">
+                                    <div class="lg:text-center">
+                                        <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
+                                            Plano
+                                        </h1>
+                                        <h1
+                                            class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-sintony text-red-1 bg-red-1/[0.15] px-2">
+                                            Anual
+                                        </h1>
+                                    </div>
+
+                                    <div>
+                                        <div class="flex items-center justify-center mb-0.5 lg:mb-px">
+                                            <div class="text-right">
+                                                <p class="text-xs font-bold text-black font-sintony mb-1">até 12x</p>
+                                                <p class="text-xs font-bold text-black font-sintony">de R$</p>
+                                            </div>
+                                            <div class="">
+                                                <p
+                                                    class="text-[40px] md:text-5xl leading-[52px] lg:leading-[62px] font-bold text-black font-sintony">
+                                                    19,97
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm md:text-base font-bold text-red-1 font-sintony text-center">R$
+                                            0,66 por dia
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1">Escolha
+                                    este plano</a>
+                            </div>
+
+                            <div class="bg-white rounded-[20px] shadow-1 px-5 pt-5 lg:pt-10 pb-9 lg:pb-5"
+                                x-show="plan === 3" style="display: none;">
+                                <div class="flex lg:flex-col items-center justify-between lg:space-y-11 mb-5 lg:mb-12">
+                                    <div class="lg:text-center">
+                                        <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
+                                            Plano
+                                        </h1>
+                                        <h1
+                                            class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
+                                            Semestral
+                                        </h1>
+                                    </div>
+
+
+                                    <div class="flex items-center justify-center">
+                                        <div class="text-right">
+                                            <p class="text-xs font-bold text-black font-sintony mb-1">6x</p>
+                                            <p class="text-xs font-bold text-black font-sintony">de R$</p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class="text-[40px] md:text-5xl leading-[52px] lg:leading-[62px] font-bold text-black font-sintony">
+                                                24,97
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1">Escolha
+                                    este plano</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto text-center mb-[30px]">
+            <a href="#" class="text-xs md:text-sm font-bold font-sintony text-red-1 block">Terms of use and privacy
+                policy</a>
+            <p class="text-xs md:text-sm text-gray-3 font-sintony mb-3">The bill payment option is only available in the
+                annual plan
+                and does not allow installments.</p>
+            <p class="text-xs md:text-sm text-gray-3 font-sintony mb-3">
+                We will send updates from Letras Academy by email and telephone, sporadically. You will be able to opt
+                out of receiving these messages.</p>
+            <p class="text-xs md:text-sm text-gray-3 font-sintony">Copyright © 2022 Letters. All rights reserved.</p>
+            <p class="text-xs md:text-sm text-gray-3 font-sintony mb-2">CNPJ: 07.175.186/0001-69</p>
+        </div>
+    </section>
+    <!-- Payment Section End -->
+
+
+
+
+
+</body>
+
+</html>
