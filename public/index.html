@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <!-- Flickty CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- Taiwlind CSS -->
     <link rel="stylesheet" href="./assets/css/tailwind.css">
+
+    <!-- Flickity JS -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <!-- Alpine Plugins -->
     <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
@@ -83,22 +88,24 @@
         <div class="container relative">
             <div class="grid lg:grid-cols-2">
                 <div class="lg:py-10 xl:py-14 text-center lg:text-start relative z-10">
-                    <div
-                        class="text-3xl sm:text-4xl lg:text-5xl leading-[42px] sm:leading-[48px] lg:leading-[62px] font-bold font-sintony text-black mb-5 md:mb-8 max-w-xl mx-auto lg:ml-0">
+                    <div class="text-3xl sm:text-4xl lg:text-5xl leading-[42px] sm:leading-[48px] lg:leading-[62px] font-bold font-sintony text-black mb-5 md:mb-8 max-w-xl mx-auto lg:ml-0 transition-all duration-700 translate-y-40 opacity-0 delay-700"
+                        x-data="{animate:false}" x-intersect="animate = true"
+                        :class="{ '!translate-y-0 !opacity-100' : animate }">
                         <h1>Domine idiomascom o
                             poder das suas</h1>
                         <div class="text-red-1 relative inline-block" x-data="{animate:false}"
                             x-intersect="animate = true">
                             <div class="absolute inset-0 w-full h-full">
-                                <div class="bg-red-1/[0.15] w-full h-full transition-all duration-700"
+                                <div class="bg-red-1/[0.15] w-full h-full transition-all duration-700 delay-[1500ms]"
                                     :class="animate ? 'max-w-full' : 'max-w-0'"></div>
                             </div>
                             <h1> músicas favoritas!</h1>
                         </div>
                     </div>
 
-                    <p
-                        class="text-sm md:text-base font-sintony text-gray-1 max-w-lg mx-auto lg:ml-0 mb-5 md:mb-8 lg:pr-10 xl:pr-0">
+                    <p class="text-sm md:text-base font-sintony text-gray-1 max-w-lg mx-auto lg:ml-0 mb-5 md:mb-8 lg:pr-10 xl:pr-0 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
+                        x-data="{animate:false}" x-intersect="animate = true"
+                        :class="{ '!translate-y-0 !opacity-100' : animate }">
                         Ouvir
                         música é
                         bom, né? Mas e
@@ -108,56 +115,60 @@
                     </p>
 
                     <a href="#"
-                        class="inline-block text-sm sm:text-base lg:text-lg leading-[18px] lg:leading-6 font-bold font-sintony text-white bg-red-1 border border-red-1 rounded-full px-7 py-4 lg:px-[22px] lg:py-6">Learn
+                        class="inline-block text-sm sm:text-base lg:text-lg leading-[18px] lg:leading-6 font-bold font-sintony text-white bg-red-1 border border-red-1 rounded-full px-7 py-4 lg:px-[22px] lg:py-6 transition-all duration-700 translate-y-40 opacity-0 delay-[1200ms]"
+                        x-data="{animate:false}" x-intersect="animate = true"
+                        :class="{ '!translate-y-0 !opacity-100' : animate }">Learn
                         languages ​​for R$19.97/month</a>
                 </div>
                 <div class="lg:flex items-center">
                     <div
                         class="w-full h-full relative lg:absolute right-0 flex items-center justify-center lg:justify-end max-w-xl lg:max-w-full mx-auto">
                         <img src="./assets/images/homepage-heros-img.svg" alt=""
-                            class="w-full lg:w-7/12 xl:w-[64%] absolute mt-8 lg:mt-12">
+                            class="w-full lg:w-7/12 xl:w-[64%] absolute mt-8 lg:mt-12 transition-all duration-500 translate-y-48 opacity-50"
+                            x-data="{animate:false}" x-intersect="animate = true"
+                            :class="{ '!translate-y-0 !opacity-100' : animate }">
                         <svg class="w-10/12 lg:w-[55%] xl:w-7/12" viewBox="0 0 734 561" fill="none"
                             xmlns="http://www.w3.org/2000/svg" x-data="{animate:false}" x-intersect="animate = true">
                             <circle opacity="0.2" cx="543.5" cy="364.5" r="190.5" fill="#E00050" x-show="animate"
-                                x-transition:enter="transition ease-out duration-700"
+                                x-transition:enter="transition ease-out duration-700 delay-100"
                                 x-transition:enter-start="opacity-0 scale-0"
                                 x-transition:enter-end="opacity-20 scale-100"
-                                x-transition:leave="transition ease-in duration-700"
+                                x-transition:leave="transition ease-in duration-700 delay-100"
                                 x-transition:leave-start="opacity-20 scale-100"
                                 x-transition:leave-end="opacity-0 scale-0" class="origin-center" />
                             <circle opacity="0.2" cx="139" cy="151" r="125" fill="#E00050" x-show="animate"
-                                x-transition:enter="transition ease-out duration-700"
+                                x-transition:enter="transition ease-out duration-700 delay-200"
                                 x-transition:enter-start="opacity-0 scale-0"
                                 x-transition:enter-end="opacity-20 scale-100"
-                                x-transition:leave="transition ease-in duration-700"
+                                x-transition:leave="transition ease-in duration-700 delay-200"
                                 x-transition:leave-start="opacity-20 scale-100"
                                 x-transition:leave-end="opacity-0 scale-0" class="origin-center" />
                             <circle opacity="0.2" cx="191.5" cy="504.5" r="56.5" fill="#E00050" x-show="animate"
-                                x-transition:enter="transition ease-out duration-700"
+                                x-transition:enter="transition ease-out duration-700 delay-300"
                                 x-transition:enter-start="opacity-0 scale-0"
                                 x-transition:enter-end="opacity-20 scale-100"
-                                x-transition:leave="transition ease-in duration-700"
+                                x-transition:leave="transition ease-in duration-700 delay-300"
                                 x-transition:leave-start="opacity-20 scale-100"
                                 x-transition:leave-end="opacity-0 scale-0" class="origin-center" />
                             <circle opacity="0.2" cx="24" cy="353" r="24" fill="#E00050" x-show="animate"
-                                x-transition:enter="transition ease-out duration-700"
+                                x-transition:enter="transition ease-out duration-700 delay-[400ms]"
                                 x-transition:enter-start="opacity-0 scale-0"
                                 x-transition:enter-end="opacity-20 scale-100"
-                                x-transition:leave="transition ease-in duration-700"
+                                x-transition:leave="transition ease-in duration-700 delay-[400ms]"
                                 x-transition:leave-start="opacity-20 scale-100"
                                 x-transition:leave-end="opacity-0 scale-0" class="origin-center" />
                             <circle opacity="0.2" cx="288" cy="32" r="24" fill="#E00050" x-show="animate"
-                                x-transition:enter="transition ease-out duration-700"
+                                x-transition:enter="transition ease-out duration-700 delay-500"
                                 x-transition:enter-start="opacity-0 scale-0"
                                 x-transition:enter-end="opacity-20 scale-100"
-                                x-transition:leave="transition ease-in duration-700"
+                                x-transition:leave="transition ease-in duration-700 delay-500"
                                 x-transition:leave-start="opacity-20 scale-100"
                                 x-transition:leave-end="opacity-0 scale-0" class="origin-center" />
                             <circle opacity="0.2" cx="619" cy="50" r="50" fill="#E00050" x-show="animate"
-                                x-transition:enter="transition ease-out duration-700"
+                                x-transition:enter="transition ease-out duration-700 delay-700"
                                 x-transition:enter-start="opacity-0 scale-0"
                                 x-transition:enter-end="opacity-20 scale-100"
-                                x-transition:leave="transition ease-in duration-700"
+                                x-transition:leave="transition ease-in duration-700 delay-700"
                                 x-transition:leave-start="opacity-20 scale-100"
                                 x-transition:leave-end="opacity-0 scale-0" class="origin-center" />
                         </svg>
@@ -175,7 +186,7 @@
             class="max-w-[984px] mx-auto text-center text-[28px] sm:text-3xl lg:text-4xl  leading-[38px] sm:leading-[42px] lg:leading-[50px] font-bold font-manrope text-black mb-6 lg:mb-4">
             O poder da
             música oferece todos os elementos necessários
-            <div class="inline relative text-red-1 bg-gradient-to-l from-red-1/[0.15] to-red-1/[0.15] bg-no-repeat transition-all duration-700 px-0.5"
+            <div class="inline relative text-red-1 bg-gradient-to-l from-red-1/[0.15] to-red-1/[0.15] bg-no-repeat transition-all duration-700 px-0.5 delay-[1800ms]"
                 x-data="{animate:false}" x-intersect="animate = true"
                 :class="animate ? 'bg-[length:100%_100%]' : 'bg-[length:0%_100%]'">
                 para praticar e aprender idiomas
@@ -185,209 +196,246 @@
             línguas com a ajuda de suas música
             preferidas</p>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[36px] mb-10 md:mb-[60px]">
-            <div>
-                <a href="#" class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
-                    <div class="relative aspect-[15/10] mb-4">
-                        <img src="./assets/images/img-1.png" alt="" class="w-full h-full object-cover rounded-2xl">
-                        <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
-                            <g clip-path="url(#clip0_131_261)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_131_261">
-                                    <rect width="41.5961" height="41.5961" fill="white"
-                                        transform="translate(0 0.646729)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-                    <p class="text-xs font-sintony text-red-1 mb-2.5">Inglês</p>
-                    <h6 class="text-base font-bold font-sintony text-black">Under The Influence </h6>
-                    <p class="text-sm font-bold font-sintony text-gray-3">Chris Brown</p>
-                </a>
+        <div class="relative -mx-4 sm:mx-0" x-data="carousel()" x-init="init()" x-on:resize.window="init()">
+            <div class="md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[36px] mb-10 md:mb-[60px] w-full"
+                x-ref="carousel">
+                <div class="w-[276px] sm:w-[310px] md:w-auto">
+                    <a href="#"
+                        class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
+                        <div class="relative aspect-[15/10] mb-4">
+                            <img src="./assets/images/img-1.png" alt="" class="w-full h-full object-cover rounded-2xl">
+                            <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
+                                <g clip-path="url(#clip0_131_261)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_131_261">
+                                        <rect width="41.5961" height="41.5961" fill="white"
+                                            transform="translate(0 0.646729)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-sintony text-red-1 mb-2.5">Inglês</p>
+                        <h6 class="text-base font-bold font-sintony text-black">Under The Influence </h6>
+                        <p class="text-sm font-bold font-sintony text-gray-3">Chris Brown</p>
+                    </a>
+                </div>
+                <div class="w-[276px] sm:w-[310px] md:w-auto">
+                    <a href="#"
+                        class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
+                        <div class="relative aspect-[15/10] mb-4">
+                            <img src="./assets/images/img-2.png" alt="" class="w-full h-full object-cover rounded-2xl">
+                            <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
+                                <g clip-path="url(#clip0_131_261)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_131_261">
+                                        <rect width="41.5961" height="41.5961" fill="white"
+                                            transform="translate(0 0.646729)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-sintony text-red-1 mb-2.5">Inglês</p>
+                        <h6 class="text-base font-bold font-sintony text-black">Unholy </h6>
+                        <p class="text-sm font-bold font-sintony text-gray-3"> Sam Smith</p>
+                    </a>
+                </div>
+                <div class="w-[276px] sm:w-[310px] md:w-auto">
+                    <a href="#"
+                        class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
+                        <div class="relative aspect-[15/10] mb-4">
+                            <img src="./assets/images/img-3.png" alt="" class="w-full h-full object-cover rounded-2xl">
+                            <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
+                                <g clip-path="url(#clip0_131_261)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_131_261">
+                                        <rect width="41.5961" height="41.5961" fill="white"
+                                            transform="translate(0 0.646729)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-sintony text-red-1 mb-2.5">Coreano</p>
+                        <h6 class="text-base font-bold font-sintony text-black">Lift Me Up
+                        </h6>
+                    </a>
+                </div>
+                <div class="w-[276px] sm:w-[310px] md:w-auto">
+                    <a href="#"
+                        class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
+                        <div class="relative aspect-[15/10] mb-4">
+                            <img src="./assets/images/img-4.png" alt="" class="w-full h-full object-cover rounded-2xl">
+                            <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
+                                <g clip-path="url(#clip0_131_261)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_131_261">
+                                        <rect width="41.5961" height="41.5961" fill="white"
+                                            transform="translate(0 0.646729)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-sintony text-red-1 mb-2.5">Coreano</p>
+                        <h6 class="text-base font-bold font-sintony text-black">Calm Down</h6>
+                        <p class="text-sm font-bold font-sintony text-gray-3">Rema</p>
+                    </a>
+                </div>
+                <div class="w-[276px] sm:w-[310px] md:w-auto">
+                    <a href="#"
+                        class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
+                        <div class="relative aspect-[15/10] mb-4">
+                            <img src="./assets/images/img-5.png" alt="" class="w-full h-full object-cover rounded-2xl">
+                            <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
+                                <g clip-path="url(#clip0_131_261)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_131_261">
+                                        <rect width="41.5961" height="41.5961" fill="white"
+                                            transform="translate(0 0.646729)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-sintony text-red-1 mb-2.5">Espanhol</p>
+                        <h6 class="text-base font-bold font-sintony text-black">Last Last </h6>
+                        <p class="text-sm font-bold font-sintony text-gray-3">Burna Biy</p>
+                    </a>
+                </div>
+                <div class="w-[276px] sm:w-[310px] md:w-auto">
+                    <a href="#"
+                        class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
+                        <div class="relative aspect-[15/10] mb-4">
+                            <img src="./assets/images/img-6.png" alt="" class="w-full h-full object-cover rounded-2xl">
+                            <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
+                                <g clip-path="url(#clip0_131_261)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_131_261">
+                                        <rect width="41.5961" height="41.5961" fill="white"
+                                            transform="translate(0 0.646729)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-sintony text-red-1 mb-2.5">Espanhol</p>
+                        <h6 class="text-base font-bold font-sintony text-black">Perfect</h6>
+                        <p class="text-sm font-bold font-sintony text-gray-3">Ed Sheeran</p>
+                    </a>
+                </div>
+                <div class="w-[276px] sm:w-[310px] md:w-auto">
+                    <a href="#"
+                        class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
+                        <div class="relative aspect-[15/10] mb-4">
+                            <img src="./assets/images/img-7.png" alt="" class="w-full h-full object-cover rounded-2xl">
+                            <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
+                                <g clip-path="url(#clip0_131_261)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_131_261">
+                                        <rect width="41.5961" height="41.5961" fill="white"
+                                            transform="translate(0 0.646729)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-sintony text-red-1 mb-2.5">Espanhol</p>
+                        <h6 class="text-base font-bold font-sintony text-black">Snap</h6>
+                        <p class="text-sm font-bold font-sintony text-gray-3">Rosa Linn</p>
+                    </a>
+                </div>
+                <div class="w-[276px] sm:w-[310px] md:w-auto">
+                    <a href="#"
+                        class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
+                        <div class="relative aspect-[15/10] mb-4">
+                            <img src="./assets/images/img-8.png" alt="" class="w-full h-full object-cover rounded-2xl">
+                            <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
+                                <g clip-path="url(#clip0_131_261)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_131_261">
+                                        <rect width="41.5961" height="41.5961" fill="white"
+                                            transform="translate(0 0.646729)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-sintony text-red-1 mb-2.5">Espanhol</p>
+                        <h6 class="text-base font-bold font-sintony text-black">Another Love</h6>
+                        <p class="text-sm font-bold font-sintony text-gray-3">
+                            Tom Odell</p>
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="#" class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
-                    <div class="relative aspect-[15/10] mb-4">
-                        <img src="./assets/images/img-2.png" alt="" class="w-full h-full object-cover rounded-2xl">
-                        <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
-                            <g clip-path="url(#clip0_131_261)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_131_261">
-                                    <rect width="41.5961" height="41.5961" fill="white"
-                                        transform="translate(0 0.646729)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-                    <p class="text-xs font-sintony text-red-1 mb-2.5">Inglês</p>
-                    <h6 class="text-base font-bold font-sintony text-black">Unholy </h6>
-                    <p class="text-sm font-bold font-sintony text-gray-3"> Sam Smith</p>
-                </a>
-            </div>
-            <div>
-                <a href="#" class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
-                    <div class="relative aspect-[15/10] mb-4">
-                        <img src="./assets/images/img-3.png" alt="" class="w-full h-full object-cover rounded-2xl">
-                        <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
-                            <g clip-path="url(#clip0_131_261)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_131_261">
-                                    <rect width="41.5961" height="41.5961" fill="white"
-                                        transform="translate(0 0.646729)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-                    <p class="text-xs font-sintony text-red-1 mb-2.5">Coreano</p>
-                    <h6 class="text-base font-bold font-sintony text-black">Lift Me Up
-                    </h6>
-                </a>
-            </div>
-            <div>
-                <a href="#" class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
-                    <div class="relative aspect-[15/10] mb-4">
-                        <img src="./assets/images/img-4.png" alt="" class="w-full h-full object-cover rounded-2xl">
-                        <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
-                            <g clip-path="url(#clip0_131_261)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_131_261">
-                                    <rect width="41.5961" height="41.5961" fill="white"
-                                        transform="translate(0 0.646729)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-                    <p class="text-xs font-sintony text-red-1 mb-2.5">Coreano</p>
-                    <h6 class="text-base font-bold font-sintony text-black">Calm Down</h6>
-                    <p class="text-sm font-bold font-sintony text-gray-3">Rema</p>
-                </a>
-            </div>
-            <div>
-                <a href="#" class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
-                    <div class="relative aspect-[15/10] mb-4">
-                        <img src="./assets/images/img-5.png" alt="" class="w-full h-full object-cover rounded-2xl">
-                        <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
-                            <g clip-path="url(#clip0_131_261)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_131_261">
-                                    <rect width="41.5961" height="41.5961" fill="white"
-                                        transform="translate(0 0.646729)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-                    <p class="text-xs font-sintony text-red-1 mb-2.5">Espanhol</p>
-                    <h6 class="text-base font-bold font-sintony text-black">Last Last </h6>
-                    <p class="text-sm font-bold font-sintony text-gray-3">Burna Biy</p>
-                </a>
-            </div>
-            <div>
-                <a href="#" class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
-                    <div class="relative aspect-[15/10] mb-4">
-                        <img src="./assets/images/img-6.png" alt="" class="w-full h-full object-cover rounded-2xl">
-                        <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
-                            <g clip-path="url(#clip0_131_261)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_131_261">
-                                    <rect width="41.5961" height="41.5961" fill="white"
-                                        transform="translate(0 0.646729)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-                    <p class="text-xs font-sintony text-red-1 mb-2.5">Espanhol</p>
-                    <h6 class="text-base font-bold font-sintony text-black">Perfect</h6>
-                    <p class="text-sm font-bold font-sintony text-gray-3">Ed Sheeran</p>
-                </a>
-            </div>
-            <div>
-                <a href="#" class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
-                    <div class="relative aspect-[15/10] mb-4">
-                        <img src="./assets/images/img-7.png" alt="" class="w-full h-full object-cover rounded-2xl">
-                        <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
-                            <g clip-path="url(#clip0_131_261)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_131_261">
-                                    <rect width="41.5961" height="41.5961" fill="white"
-                                        transform="translate(0 0.646729)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-                    <p class="text-xs font-sintony text-red-1 mb-2.5">Espanhol</p>
-                    <h6 class="text-base font-bold font-sintony text-black">Snap</h6>
-                    <p class="text-sm font-bold font-sintony text-gray-3">Rosa Linn</p>
-                </a>
-            </div>
-            <div>
-                <a href="#" class="bg-white hover:bg-red-1/[0.15] p-2.5 rounded-xl block transition-all duration-300">
-                    <div class="relative aspect-[15/10] mb-4">
-                        <img src="./assets/images/img-8.png" alt="" class="w-full h-full object-cover rounded-2xl">
-                        <svg class="absolute inset-0 m-auto" width="42" height="43" viewBox="0 0 42 43" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20.7982" cy="21.4447" r="17.4808" fill="#E00050" />
-                            <g clip-path="url(#clip0_131_261)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M20.798 0.646729C15.282 0.646729 9.99199 2.83794 6.0916 6.73833C2.19121 10.6387 0 15.9288 0 21.4448C0 26.9607 2.19121 32.2508 6.0916 36.1512C9.99199 40.0516 15.282 42.2428 20.798 42.2428C26.314 42.2428 31.6041 40.0516 35.5045 36.1512C39.4048 32.2508 41.5961 26.9607 41.5961 21.4448C41.5961 15.9288 39.4048 10.6387 35.5045 6.73833C31.6041 2.83794 26.314 0.646729 20.798 0.646729ZM16.7696 11.8457C16.9599 11.838 17.1466 11.8987 17.296 12.0169L28.4949 20.816C28.5901 20.8909 28.667 20.9864 28.7199 21.0953C28.7728 21.2042 28.8003 21.3237 28.8003 21.4448C28.8003 21.5658 28.7728 21.6853 28.7199 21.7943C28.667 21.9032 28.5901 21.9986 28.4949 22.0735C24.7625 25.006 21.0268 27.9369 17.296 30.8695C17.1778 30.9633 17.0355 31.0219 16.8854 31.0383C16.7354 31.0547 16.5838 31.0284 16.4481 30.9623C16.3124 30.8962 16.1982 30.7931 16.1187 30.6648C16.0391 30.5366 15.9974 30.3884 15.9985 30.2375V12.6456C15.9985 12.2136 16.3393 11.8633 16.7696 11.8457Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_131_261">
-                                    <rect width="41.5961" height="41.5961" fill="white"
-                                        transform="translate(0 0.646729)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-                    <p class="text-xs font-sintony text-red-1 mb-2.5">Espanhol</p>
-                    <h6 class="text-base font-bold font-sintony text-black">Another Love</h6>
-                    <p class="text-sm font-bold font-sintony text-gray-3">
-                        Tom Odell</p>
-                </a>
+            <div class="">
+                <!-- Prev Button -->
+                <button class="absolute top-[28%] left-0" @click.prevent="prev()" x-show="active != 0">
+                    <svg class="rotate-180" width="38" height="38" viewBox="0 0 38 38" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="19" cy="19" r="19" fill="white" />
+                        <path
+                            d="M17.0684 13.9841L21.1977 18.1134C21.6854 18.6011 21.6854 19.3991 21.1977 19.8868L17.0684 24.0161"
+                            stroke="#E00050" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <!-- Next Button -->
+                <button class="absolute top-[28%] right-0" @click.prevent="next()" x-show="active != length-1">
+                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="19" cy="19" r="19" fill="white" />
+                        <path
+                            d="M17.0684 13.9841L21.1977 18.1134C21.6854 18.6011 21.6854 19.3991 21.1977 19.8868L17.0684 24.0161"
+                            stroke="#E00050" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
         </div>
+
+
         <div class="text-center">
             <a href="#"
                 class="text-sm md:text-base font-bold font-sintony text-red-1 bg-red-1/[0.15] py-1.5 md:py-2 px-5 md:px-[26px] rounded-[10px]">See
@@ -401,7 +449,7 @@
         <div
             class="max-w-[984px] mx-auto text-center text-[28px] sm:text-3xl lg:text-4xl  leading-[38px] sm:leading-[42px] lg:leading-[50px] font-bold font-manrope text-black mb-5 lg:mb-3">
             Take
-            <div class="inline relative text-red-1 bg-gradient-to-l from-red-1/[0.15] to-red-1/[0.15] bg-no-repeat transition-all duration-700 px-0.5"
+            <div class="inline relative text-red-1 bg-gradient-to-l from-red-1/[0.15] to-red-1/[0.15] bg-no-repeat transition-all duration-700 delay-500 px-0.5"
                 x-data="{animate:false}" x-intersect="animate = true"
                 :class="animate ? 'bg-[length:100%_100%]' : 'bg-[length:0%_100%]'">
                 language courses
@@ -965,57 +1013,57 @@
                     <svg class="w-full h-full max-w-[974px] min-w-[974px] relative" viewBox="0 0 974 765" fill="none"
                         xmlns="http://www.w3.org/2000/svg" x-data="{animate:false}" x-intersect="animate = true">
                         <circle opacity="0.2" cx="128.5" cy="248.5" r="128.5" fill="#E00050" x-show="animate"
-                            x-transition:enter="transition ease-out duration-700"
+                            x-transition:enter="transition ease-out duration-700 delay-75"
                             x-transition:enter-start="opacity-0 scale-0" x-transition:enter-end="opacity-20 scale-100"
-                            x-transition:leave="transition ease-in duration-700"
+                            x-transition:leave="transition ease-in duration-700 delay-75"
                             x-transition:leave-start="opacity-20 scale-100" x-transition:leave-end="opacity-0 scale-0"
                             class="origin-center" />
                         <circle opacity="0.2" cx="205" cy="51" r="29" fill="#E00050" x-show="animate"
-                            x-transition:enter="transition ease-out duration-700"
+                            x-transition:enter="transition ease-out duration-700 delay-150"
                             x-transition:enter-start="opacity-0 scale-0" x-transition:enter-end="opacity-20 scale-100"
-                            x-transition:leave="transition ease-in duration-700"
+                            x-transition:leave="transition ease-in duration-700 delay-150"
                             x-transition:leave-start="opacity-20 scale-100" x-transition:leave-end="opacity-0 scale-0"
                             class="origin-center" />
                         <circle opacity="0.2" cx="762" cy="684" r="29" fill="#E00050" x-show="animate"
-                            x-transition:enter="transition ease-out duration-700"
+                            x-transition:enter="transition ease-out duration-700 delay-200"
                             x-transition:enter-start="opacity-0 scale-0" x-transition:enter-end="opacity-20 scale-100"
-                            x-transition:leave="transition ease-in duration-700"
+                            x-transition:leave="transition ease-in duration-700 delay-200"
                             x-transition:leave-start="opacity-20 scale-100" x-transition:leave-end="opacity-0 scale-0"
                             class="origin-center" />
                         <circle opacity="0.2" cx="859.5" cy="92.5" r="63.5" fill="#E00050" x-show="animate"
-                            x-transition:enter="transition ease-out duration-700"
+                            x-transition:enter="transition ease-out duration-700 delay-300"
                             x-transition:enter-start="opacity-0 scale-0" x-transition:enter-end="opacity-20 scale-100"
-                            x-transition:leave="transition ease-in duration-700"
+                            x-transition:leave="transition ease-in duration-700 delay-300"
                             x-transition:leave-start="opacity-20 scale-100" x-transition:leave-end="opacity-0 scale-0"
                             class="origin-center" />
                         <circle opacity="0.2" cx="195.41" cy="671.342" r="63.5" fill="#E00050" x-show="animate"
-                            x-transition:enter="transition ease-out duration-700"
+                            x-transition:enter="transition ease-out duration-700 delay-500"
                             x-transition:enter-start="opacity-0 scale-0" x-transition:enter-end="opacity-20 scale-100"
-                            x-transition:leave="transition ease-in duration-700"
+                            x-transition:leave="transition ease-in duration-700 delay-500"
                             x-transition:leave-start="opacity-20 scale-100" x-transition:leave-end="opacity-0 scale-0"
                             class="origin-center" />
                         <circle opacity="0.2" cx="948.5" cy="25.5" r="25.5" fill="#E00050" x-show="animate"
-                            x-transition:enter="transition ease-out duration-700"
+                            x-transition:enter="transition ease-out duration-700 delay-700"
                             x-transition:enter-start="opacity-0 scale-0" x-transition:enter-end="opacity-20 scale-100"
-                            x-transition:leave="transition ease-in duration-700"
+                            x-transition:leave="transition ease-in duration-700 delay-700"
                             x-transition:leave-start="opacity-20 scale-100" x-transition:leave-end="opacity-0 scale-0"
                             class="origin-center" />
                         <circle opacity="0.2" cx="106.826" cy="738.892" r="25.5" fill="#E00050" x-show="animate"
-                            x-transition:enter="transition ease-out duration-700"
+                            x-transition:enter="transition ease-out duration-700 delay-1000"
                             x-transition:enter-start="opacity-0 scale-0" x-transition:enter-end="opacity-20 scale-100"
-                            x-transition:leave="transition ease-in duration-700"
+                            x-transition:leave="transition ease-in duration-700 delay-1000"
                             x-transition:leave-start="opacity-20 scale-100" x-transition:leave-end="opacity-0 scale-0"
                             class="origin-center" />
                         <circle opacity="0.2" cx="838.5" cy="457.5" r="130.5" fill="#E00050" x-show="animate"
-                            x-transition:enter="transition ease-out duration-700"
+                            x-transition:enter="transition ease-out duration-700 delay-300"
                             x-transition:enter-start="opacity-0 scale-0" x-transition:enter-end="opacity-20 scale-100"
-                            x-transition:leave="transition ease-in duration-700"
+                            x-transition:leave="transition ease-in duration-700 delay-300"
                             x-transition:leave-start="opacity-20 scale-100" x-transition:leave-end="opacity-0 scale-0"
                             class="origin-center" />
                         <circle cx="501.5" cy="343.5" r="327.5" fill="#F6B3CB" x-show="animate"
-                            x-transition:enter="transition ease-out duration-700"
+                            x-transition:enter="transition ease-out duration-700 delay-300"
                             x-transition:enter-start="opacity-0 scale-0" x-transition:enter-end="opacity-100 scale-100"
-                            x-transition:leave="transition ease-in duration-700"
+                            x-transition:leave="transition ease-in duration-700 delay-300"
                             x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-0"
                             class="origin-center" />
                     </svg>
@@ -1023,7 +1071,9 @@
                 </div>
                 <div class="relative lg:pb-10 lg:pt-[117px]">
                     <div class="grid lg:grid-cols-3 gap-8 items-center mb-9 lg:mb-32">
-                        <div class="bg-white rounded-[20px] shadow-1 px-5 pt-5 lg:pt-10 pb-9 lg:pb-5">
+                        <div class="bg-white rounded-[20px] shadow-1 px-5 pt-5 lg:pt-10 pb-9 lg:pb-5 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
+                            x-data="{animate:false}" x-intersect="animate = true"
+                            :class="{ '!translate-y-0 !opacity-100' : animate }">
                             <div class="flex lg:flex-col items-center justify-between lg:space-y-16 mb-5 lg:mb-10">
                                 <div class="lg:text-center">
                                     <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
@@ -1045,56 +1095,68 @@
                                 </div>
                             </div>
                             <a href="#"
-                                class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1">Escolha
+                                class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
+                                x-data="{animate:false}" x-intersect="animate = true"
+                                :class="{ '!translate-y-0 !opacity-100' : animate }">Escolha
                                 este plano</a>
                         </div>
-                        <div
-                            class="bg-white rounded-[20px] shadow-1 px-5 pt-5 lg:pt-10 pb-9 lg:pb-5 relative lg:overflow-hidden">
-                            <div class="absolute inset-x-0 top-0 text-center -translate-y-1/2 lg:hidden">
-                                <div
-                                    class="px-5 py-1 text-xs font-bold text-white font-sintony bg-orange-1 rounded-[5px] inline-block mx-auto">
-                                    Popular</div>
-                            </div>
-                            <div
-                                class="absolute right-0 top-0 text-center rotate-45 translate-y-6 translate-x-16 hidden lg:block">
-                                <div
-                                    class="px-20 py-1 text-xs font-bold text-white font-sintony bg-orange-1 inline-block">
-                                    Popular</div>
-                            </div>
-                            <div class="flex lg:flex-col items-center justify-between lg:space-y-12 mb-5 lg:mb-[90px]">
-                                <div class="lg:text-center">
-                                    <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
-                                        Plano
-                                    </h1>
-                                    <h1
-                                        class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
-                                        Anual
-                                    </h1>
+                        <div class="bg-white rounded-[20px] shadow-1 relative  pb-9 lg:pb-5 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
+                            x-data="{animate:false}" x-intersect="animate = true"
+                            :class="{ '!translate-y-0 !opacity-100' : animate }">
+                            <div class="lg:overflow-hidden px-5 pt-5 lg:pt-10  w-full relative">
+                                <div class="absolute inset-x-0 top-0 text-center -translate-y-1/2 lg:hidden">
+                                    <div
+                                        class="px-5 py-1 text-xs font-bold text-white font-sintony bg-orange-1 rounded-[5px] inline-block mx-auto">
+                                        Popular</div>
                                 </div>
-
-                                <div>
-                                    <div class="flex items-center justify-center mb-0.5 lg:mb-px">
-                                        <div class="text-right">
-                                            <p class="text-xs font-bold text-black font-sintony mb-1">até 12x</p>
-                                            <p class="text-xs font-bold text-black font-sintony">de R$</p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class="text-[40px] md:text-5xl leading-[52px] lg:leading-[62px] font-bold text-black font-sintony">
-                                                19,97
-                                            </p>
-                                        </div>
+                                <div
+                                    class="absolute right-0 top-0 text-center rotate-45 translate-y-6 translate-x-16 hidden lg:block">
+                                    <div
+                                        class="px-20 py-1 text-xs font-bold text-white font-sintony bg-orange-1 inline-block">
+                                        Popular</div>
+                                </div>
+                                <div
+                                    class="flex lg:flex-col items-center justify-between lg:space-y-12 mb-5 lg:mb-[90px]">
+                                    <div class="lg:text-center">
+                                        <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
+                                            Plano
+                                        </h1>
+                                        <h1
+                                            class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
+                                            Anual
+                                        </h1>
                                     </div>
-                                    <p class="text-sm md:text-base font-bold text-red-1 font-sintony text-center">R$
-                                        0,66 por dia
-                                    </p>
+
+                                    <div>
+                                        <div class="flex items-center justify-center mb-0.5 lg:mb-px">
+                                            <div class="text-right">
+                                                <p class="text-xs font-bold text-black font-sintony mb-1">até 12x</p>
+                                                <p class="text-xs font-bold text-black font-sintony">de R$</p>
+                                            </div>
+                                            <div class="">
+                                                <p
+                                                    class="text-[40px] md:text-5xl leading-[52px] lg:leading-[62px] font-bold text-black font-sintony">
+                                                    19,97
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm md:text-base font-bold text-red-1 font-sintony text-center">R$
+                                            0,66 por dia
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <a href="#"
-                                class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1">Escolha
-                                este plano</a>
+                            <div class="px-5">
+                                <a href="#"
+                                    class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
+                                    x-data="{animate:false}" x-intersect="animate = true"
+                                    :class="{ '!translate-y-0 !opacity-100' : animate }">Escolha
+                                    este plano</a>
+                            </div>
                         </div>
-                        <div class="bg-white rounded-[20px] shadow-1 px-5 pt-5 lg:pt-10 pb-9 lg:pb-5">
+                        <div class="bg-white rounded-[20px] shadow-1 px-5 pt-5 lg:pt-10 pb-9 lg:pb-5 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
+                            x-data="{animate:false}" x-intersect="animate = true"
+                            :class="{ '!translate-y-0 !opacity-100' : animate }">
                             <div class="flex lg:flex-col items-center justify-between lg:space-y-11 mb-5 lg:mb-12">
                                 <div class="lg:text-center">
                                     <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
@@ -1121,7 +1183,9 @@
                                 </div>
                             </div>
                             <a href="#"
-                                class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1">Escolha
+                                class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
+                                x-data="{animate:false}" x-intersect="animate = true"
+                                :class="{ '!translate-y-0 !opacity-100' : animate }">Escolha
                                 este plano</a>
                         </div>
                     </div>
@@ -1132,13 +1196,204 @@
     </section>
     <!-- 5th Section End -->
 
-    <!-- 6th Section Start -->
+    <!-- FAQ Section Start -->
     <section class="container mb-8 md:mb-[76px]">
-        <h1 class="text-4xl font-bold font-manrope text-center text-black mb-10">Outras dúvidas</h1>
+        <h1 class="text-4xl font-bold font-manrope text-center text-black mb-10 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
+            x-data="{animate:false}" x-intersect="animate = true" :class="{ '!translate-y-0 !opacity-100' : animate }">
+            Outras dúvidas</h1>
 
+        <div class="space-y-4 md:space-y-5 mb-[62px] md:mb-[104px]" x-data="{openTab : 0}">
+            <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-7">
+                <div class="flex items-center justify-between space-x-6 cursor-pointer"
+                    @click.prevent="openTab === 1 ? openTab = 0 : openTab = 1">
+                    <h5 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-black font-sintony">Vou
+                        precisar pagar para usar a plataforma?</h5>
+
+                    <svg class="w-3 sm:w-4 shrink-0 transition-all" :class="openTab === 1 ? 'rotate-180' : 'rotate-0'"
+                        viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.2225 0.515109C15.9259 0.220212 15.5246 0.0546875 15.1063 0.0546875C14.688 0.0546875 14.2867 0.220212 13.99 0.515109L8.30585 6.12011L2.70085 0.515109C2.40419 0.220212 2.00289 0.0546875 1.5846 0.0546875C1.1663 0.0546875 0.765005 0.220212 0.468347 0.515109C0.319944 0.6623 0.202153 0.837419 0.121769 1.03036C0.0413852 1.22331 0 1.43026 0 1.63928C0 1.84829 0.0413852 2.05525 0.121769 2.24819C0.202153 2.44113 0.319944 2.61625 0.468347 2.76344L7.18168 9.47678C7.32887 9.62518 7.50399 9.74297 7.69693 9.82335C7.88988 9.90374 8.09683 9.94512 8.30585 9.94512C8.51487 9.94512 8.72182 9.90374 8.91476 9.82335C9.1077 9.74297 9.28282 9.62518 9.43001 9.47678L16.2225 2.76344C16.3709 2.61625 16.4887 2.44113 16.5691 2.24819C16.6495 2.05525 16.6909 1.84829 16.6909 1.63928C16.6909 1.43026 16.6495 1.22331 16.5691 1.03036C16.4887 0.837419 16.3709 0.6623 16.2225 0.515109Z"
+                            fill="black" />
+                    </svg>
+                </div>
+                <div class="mt-2.5" x-show="openTab === 1">
+                    <p class="text-xs sm:text-sm md:text-base font-sintony text-gray-3">Sim. O Letras Academy oferece
+                        planos com diferentes períodos de fidelização e preços para você acessar o conteúdo gravado, os
+                        exercícios e materiais. Eventuais valores promocionais praticados em datas sazonais estão à
+                        fidelização em contrato por 12 (doze) meses e pagos com cartão de crédito no ato de assinatura
+                        do Letras Academy. Mais detalhes de valores promocionais serão divulgados quando estes estiverem
+                        disponíveis. Ao assinar um plano, o aluno receberá até 3 aulas experimentais grátis com
+                        professores particulares. A assinatura não inclui a contratação de pacotes de aulas particulares
+                        com professores disponíveis na plataforma, que deverão ser contratados separadamente.</p>
+                </div>
+            </div>
+
+            <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-7">
+                <div class="flex items-center justify-between space-x-6 cursor-pointer"
+                    @click.prevent="openTab === 2 ? openTab = 0 : openTab = 2">
+                    <h5 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-black font-sintony">O que é o
+                        curso de idiomas do Letras Academy?</h5>
+
+                    <svg class="w-3 sm:w-4 shrink-0 transition-all" :class="openTab === 2 ? 'rotate-180' : 'rotate-0'"
+                        viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.2225 0.515109C15.9259 0.220212 15.5246 0.0546875 15.1063 0.0546875C14.688 0.0546875 14.2867 0.220212 13.99 0.515109L8.30585 6.12011L2.70085 0.515109C2.40419 0.220212 2.00289 0.0546875 1.5846 0.0546875C1.1663 0.0546875 0.765005 0.220212 0.468347 0.515109C0.319944 0.6623 0.202153 0.837419 0.121769 1.03036C0.0413852 1.22331 0 1.43026 0 1.63928C0 1.84829 0.0413852 2.05525 0.121769 2.24819C0.202153 2.44113 0.319944 2.61625 0.468347 2.76344L7.18168 9.47678C7.32887 9.62518 7.50399 9.74297 7.69693 9.82335C7.88988 9.90374 8.09683 9.94512 8.30585 9.94512C8.51487 9.94512 8.72182 9.90374 8.91476 9.82335C9.1077 9.74297 9.28282 9.62518 9.43001 9.47678L16.2225 2.76344C16.3709 2.61625 16.4887 2.44113 16.5691 2.24819C16.6495 2.05525 16.6909 1.84829 16.6909 1.63928C16.6909 1.43026 16.6495 1.22331 16.5691 1.03036C16.4887 0.837419 16.3709 0.6623 16.2225 0.515109Z"
+                            fill="black" />
+                    </svg>
+                </div>
+                <div class="mt-2.5" x-show="openTab === 2">
+                    <p class="text-xs sm:text-sm md:text-base font-sintony text-gray-3">Sim. O Letras Academy oferece
+                        planos com diferentes períodos de fidelização e preços para você acessar o conteúdo gravado, os
+                        exercícios e materiais. Eventuais valores promocionais praticados em datas sazonais estão à
+                        fidelização em contrato por 12 (doze) meses e pagos com cartão de crédito no ato de assinatura
+                        do Letras Academy. Mais detalhes de valores promocionais serão divulgados quando estes estiverem
+                        disponíveis. Ao assinar um plano, o aluno receberá até 3 aulas experimentais grátis com
+                        professores particulares. A assinatura não inclui a contratação de pacotes de aulas particulares
+                        com professores disponíveis na plataforma, que deverão ser contratados separadamente.</p>
+                </div>
+            </div>
+
+            <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-7">
+                <div class="flex items-center justify-between space-x-6 cursor-pointer"
+                    @click.prevent="openTab === 3 ? openTab = 0 : openTab = 3">
+                    <h5 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-black font-sintony">Como irei
+                        contratar professores para aulas particulares?</h5>
+
+                    <svg class="w-3 sm:w-4 shrink-0 transition-all" :class="openTab === 3 ? 'rotate-180' : 'rotate-0'"
+                        viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.2225 0.515109C15.9259 0.220212 15.5246 0.0546875 15.1063 0.0546875C14.688 0.0546875 14.2867 0.220212 13.99 0.515109L8.30585 6.12011L2.70085 0.515109C2.40419 0.220212 2.00289 0.0546875 1.5846 0.0546875C1.1663 0.0546875 0.765005 0.220212 0.468347 0.515109C0.319944 0.6623 0.202153 0.837419 0.121769 1.03036C0.0413852 1.22331 0 1.43026 0 1.63928C0 1.84829 0.0413852 2.05525 0.121769 2.24819C0.202153 2.44113 0.319944 2.61625 0.468347 2.76344L7.18168 9.47678C7.32887 9.62518 7.50399 9.74297 7.69693 9.82335C7.88988 9.90374 8.09683 9.94512 8.30585 9.94512C8.51487 9.94512 8.72182 9.90374 8.91476 9.82335C9.1077 9.74297 9.28282 9.62518 9.43001 9.47678L16.2225 2.76344C16.3709 2.61625 16.4887 2.44113 16.5691 2.24819C16.6495 2.05525 16.6909 1.84829 16.6909 1.63928C16.6909 1.43026 16.6495 1.22331 16.5691 1.03036C16.4887 0.837419 16.3709 0.6623 16.2225 0.515109Z"
+                            fill="black" />
+                    </svg>
+                </div>
+                <div class="mt-2.5" x-show="openTab === 3">
+                    <p class="text-xs sm:text-sm md:text-base font-sintony text-gray-3">Sim. O Letras Academy oferece
+                        planos com diferentes períodos de fidelização e preços para você acessar o conteúdo gravado, os
+                        exercícios e materiais. Eventuais valores promocionais praticados em datas sazonais estão à
+                        fidelização em contrato por 12 (doze) meses e pagos com cartão de crédito no ato de assinatura
+                        do Letras Academy. Mais detalhes de valores promocionais serão divulgados quando estes estiverem
+                        disponíveis. Ao assinar um plano, o aluno receberá até 3 aulas experimentais grátis com
+                        professores particulares. A assinatura não inclui a contratação de pacotes de aulas particulares
+                        com professores disponíveis na plataforma, que deverão ser contratados separadamente.</p>
+                </div>
+            </div>
+
+            <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-7">
+                <div class="flex items-center justify-between space-x-6 cursor-pointer"
+                    @click.prevent="openTab === 4 ? openTab = 0 : openTab = 4">
+                    <h5 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-black font-sintony">Onde
+                        poderei estudar?</h5>
+
+                    <svg class="w-3 sm:w-4 shrink-0 transition-all" :class="openTab === 4 ? 'rotate-180' : 'rotate-0'"
+                        viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.2225 0.515109C15.9259 0.220212 15.5246 0.0546875 15.1063 0.0546875C14.688 0.0546875 14.2867 0.220212 13.99 0.515109L8.30585 6.12011L2.70085 0.515109C2.40419 0.220212 2.00289 0.0546875 1.5846 0.0546875C1.1663 0.0546875 0.765005 0.220212 0.468347 0.515109C0.319944 0.6623 0.202153 0.837419 0.121769 1.03036C0.0413852 1.22331 0 1.43026 0 1.63928C0 1.84829 0.0413852 2.05525 0.121769 2.24819C0.202153 2.44113 0.319944 2.61625 0.468347 2.76344L7.18168 9.47678C7.32887 9.62518 7.50399 9.74297 7.69693 9.82335C7.88988 9.90374 8.09683 9.94512 8.30585 9.94512C8.51487 9.94512 8.72182 9.90374 8.91476 9.82335C9.1077 9.74297 9.28282 9.62518 9.43001 9.47678L16.2225 2.76344C16.3709 2.61625 16.4887 2.44113 16.5691 2.24819C16.6495 2.05525 16.6909 1.84829 16.6909 1.63928C16.6909 1.43026 16.6495 1.22331 16.5691 1.03036C16.4887 0.837419 16.3709 0.6623 16.2225 0.515109Z"
+                            fill="black" />
+                    </svg>
+                </div>
+                <div class="mt-2.5" x-show="openTab === 4">
+                    <p class="text-xs sm:text-sm md:text-base font-sintony text-gray-3">Sim. O Letras Academy oferece
+                        planos com diferentes períodos de fidelização e preços para você acessar o conteúdo gravado, os
+                        exercícios e materiais. Eventuais valores promocionais praticados em datas sazonais estão à
+                        fidelização em contrato por 12 (doze) meses e pagos com cartão de crédito no ato de assinatura
+                        do Letras Academy. Mais detalhes de valores promocionais serão divulgados quando estes estiverem
+                        disponíveis. Ao assinar um plano, o aluno receberá até 3 aulas experimentais grátis com
+                        professores particulares. A assinatura não inclui a contratação de pacotes de aulas particulares
+                        com professores disponíveis na plataforma, que deverão ser contratados separadamente.</p>
+                </div>
+            </div>
+
+            <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-7">
+                <div class="flex items-center justify-between space-x-6 cursor-pointer"
+                    @click.prevent="openTab === 5 ? openTab = 0 : openTab = 5">
+                    <h5 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-black font-sintony">Como vou
+                        pagar pelas aulas?</h5>
+
+                    <svg class="w-3 sm:w-4 shrink-0 transition-all" :class="openTab === 5 ? 'rotate-180' : 'rotate-0'"
+                        viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.2225 0.515109C15.9259 0.220212 15.5246 0.0546875 15.1063 0.0546875C14.688 0.0546875 14.2867 0.220212 13.99 0.515109L8.30585 6.12011L2.70085 0.515109C2.40419 0.220212 2.00289 0.0546875 1.5846 0.0546875C1.1663 0.0546875 0.765005 0.220212 0.468347 0.515109C0.319944 0.6623 0.202153 0.837419 0.121769 1.03036C0.0413852 1.22331 0 1.43026 0 1.63928C0 1.84829 0.0413852 2.05525 0.121769 2.24819C0.202153 2.44113 0.319944 2.61625 0.468347 2.76344L7.18168 9.47678C7.32887 9.62518 7.50399 9.74297 7.69693 9.82335C7.88988 9.90374 8.09683 9.94512 8.30585 9.94512C8.51487 9.94512 8.72182 9.90374 8.91476 9.82335C9.1077 9.74297 9.28282 9.62518 9.43001 9.47678L16.2225 2.76344C16.3709 2.61625 16.4887 2.44113 16.5691 2.24819C16.6495 2.05525 16.6909 1.84829 16.6909 1.63928C16.6909 1.43026 16.6495 1.22331 16.5691 1.03036C16.4887 0.837419 16.3709 0.6623 16.2225 0.515109Z"
+                            fill="black" />
+                    </svg>
+                </div>
+                <div class="mt-2.5" x-show="openTab === 5">
+                    <p class="text-xs sm:text-sm md:text-base font-sintony text-gray-3">Sim. O Letras Academy oferece
+                        planos com diferentes períodos de fidelização e preços para você acessar o conteúdo gravado, os
+                        exercícios e materiais. Eventuais valores promocionais praticados em datas sazonais estão à
+                        fidelização em contrato por 12 (doze) meses e pagos com cartão de crédito no ato de assinatura
+                        do Letras Academy. Mais detalhes de valores promocionais serão divulgados quando estes estiverem
+                        disponíveis. Ao assinar um plano, o aluno receberá até 3 aulas experimentais grátis com
+                        professores particulares. A assinatura não inclui a contratação de pacotes de aulas particulares
+                        com professores disponíveis na plataforma, que deverão ser contratados separadamente.</p>
+                </div>
+            </div>
+        </div>
+
+        <h5 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold font-sintony text-black text-center">Ficou com
+            alguma dúvida?
+            Consulte nossa ou <span class="text-red-1"> chame a gente no WhatsApp agora!</span>
+        </h5>
     </section>
-    <!-- 6th Section End -->
+    <!-- FAQ Section End -->
 
+
+    <!-- Footer Section Start -->
+    <footer class="bg-black">
+        <div
+            class="container lg:max-w-5xl py-12 px-[72px] lg:px-5 xl:px-[18px] lg:pt-[52px] lg:pb-[38px] flex flex-col lg:flex-row lg:items-center ">
+            <div
+                class="order-2 lg:order-1 flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap sm:items-center justify-center lg:justify-start w-full -mx-6">
+                <a href="#" class="text-gray-10 font-bold font-sintony inline-block mx-6 my-2.5">Language Courses</a>
+                <a href="#" class="text-gray-10 font-bold font-sintony inline-block mx-6 my-2.5">Private Tutors</a>
+                <a href="#" class="text-gray-10 font-bold font-sintony inline-block mx-6 my-2.5">Dictionary</a>
+                <a href="#" class="text-gray-10 font-bold font-sintony inline-block mx-6 my-2.5">Blog</a>
+            </div>
+            <div class="order-1 lg:order-2 text-left sm:text-center shrink-0">
+                <a href="#" class="inline-block">
+                    <img src="./assets/images/logo-gs (2) 2.png" alt="" class="max-w-[269px] w-full">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script>
+        function carousel() {
+            return {
+                active: 0,
+                length: null,
+                init() {
+                    var flkty = new Flickity(this.$refs.carousel, {
+                        wrapAround: false,
+                        autoPlay: false,
+                        prevNextButtons: false,
+                        pageDots: false,
+                        draggable: true,
+                        contain: true,
+                        cellAlign: 'left'
+                    });
+                    flkty.on('change', i => this.active = i);
+                    this.length = flkty.cells.length;
+                    width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+                    if (width < 768) {
+                        flkty = new Flickity(this.$refs.carousel)
+                    } else {
+                        flkty.destroy();
+                    }
+                },
+                prev() {
+                    var flkty = new Flickity(this.$refs.carousel);
+                    flkty.previous();
+                },
+                next() {
+                    var flkty = new Flickity(this.$refs.carousel);
+                    flkty.next();
+                }
+
+            }
+
+        }
+    </script>
 </body>
 
 </html>

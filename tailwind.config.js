@@ -11,6 +11,7 @@ module.exports = {
           3: "#828282",
           4: "#BDBDBD",
           5: "#E0E0E0",
+          10: "#D2C5C2",
         },
         red: {
           1: "#E00050",
@@ -43,6 +44,7 @@ module.exports = {
       },
       backgroundImage: {
         1: "linear-gradient(180deg, #D2C5C2 0%, #F23866 100%)",
+        2: "linear-gradient(180deg, rgba(210, 197, 194, 0.3) 0%, rgba(242, 56, 102, 0.3) 100%)",
       },
     },
   },
