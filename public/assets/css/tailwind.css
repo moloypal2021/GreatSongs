@@ -711,9 +711,9 @@ select{
   }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1036px){
   .container{
-    max-width: 1280px;
+    max-width: 1036px;
     padding-right: 18px;
     padding-left: 18px;
   }
@@ -786,10 +786,6 @@ select{
 
 .z-10{
   z-index: 10;
-}
-
-.z-0{
-  z-index: 0;
 }
 
 .order-2{
@@ -1050,10 +1046,6 @@ select{
   width: 83.333333%;
 }
 
-.w-\[46px\]{
-  width: 46px;
-}
-
 .w-\[47\%\]{
   width: 47%;
 }
@@ -1088,6 +1080,18 @@ select{
 
 .w-6{
   width: 1.5rem;
+}
+
+.w-\[50\%\]{
+  width: 50%;
+}
+
+.w-\[53\%\]{
+  width: 53%;
+}
+
+.w-\[52\%\]{
+  width: 52%;
 }
 
 .min-w-\[974px\]{
@@ -1144,6 +1148,14 @@ select{
 
 .max-w-3xl{
   max-width: 48rem;
+}
+
+.max-w-\[904px\]{
+  max-width: 904px;
+}
+
+.max-w-4xl{
+  max-width: 56rem;
 }
 
 .shrink-0{
@@ -1206,6 +1218,26 @@ select{
 
 .translate-x-16{
   --tw-translate-x: 4rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[48\%\]{
+  --tw-translate-x: -48%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[48\%\]{
+  --tw-translate-x: 48%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[40\%\]{
+  --tw-translate-x: 40%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[30\%\]{
+  --tw-translate-x: 30%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2173,6 +2205,10 @@ select{
   .sm\:leading-\[42px\]{
     line-height: 42px;
   }
+
+  .sm\:leading-10{
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 768px){
@@ -2252,6 +2288,10 @@ select{
     margin-bottom: 26px;
   }
 
+  .md\:mb-20{
+    margin-bottom: 5rem;
+  }
+
   .md\:grid{
     display: grid;
   }
@@ -2264,16 +2304,16 @@ select{
     height: 2.5rem;
   }
 
-  .md\:w-\[90px\]{
-    width: 90px;
-  }
-
   .md\:w-auto{
     width: auto;
   }
 
   .md\:w-7{
     width: 1.75rem;
+  }
+
+  .md\:w-6{
+    width: 1.5rem;
   }
 
   .md\:grid-cols-2{
@@ -2316,6 +2356,10 @@ select{
     padding: 30px;
   }
 
+  .md\:p-6{
+    padding: 1.5rem;
+  }
+
   .md\:py-7{
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
@@ -2344,6 +2388,11 @@ select{
   .md\:py-14{
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+
+  .md\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .md\:text-base{
@@ -2483,6 +2532,30 @@ select{
     margin-top: 60px;
   }
 
+  .lg\:ml-12{
+    margin-left: 3rem;
+  }
+
+  .lg\:mt-\[118px\]{
+    margin-top: 118px;
+  }
+
+  .lg\:mt-24{
+    margin-top: 6rem;
+  }
+
+  .lg\:mb-24{
+    margin-bottom: 6rem;
+  }
+
+  .lg\:mb-16{
+    margin-bottom: 4rem;
+  }
+
+  .lg\:mb-9{
+    margin-bottom: 2.25rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -2521,6 +2594,18 @@ select{
 
   .lg\:w-1\/2{
     width: 50%;
+  }
+
+  .lg\:w-\[58\%\]{
+    width: 58%;
+  }
+
+  .lg\:w-\[60\%\]{
+    width: 60%;
+  }
+
+  .lg\:w-5{
+    width: 1.25rem;
   }
 
   .lg\:max-w-xl{
@@ -2713,6 +2798,11 @@ select{
     padding-right: 1.25rem;
   }
 
+  .lg\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .lg\:pb-12{
     padding-bottom: 3rem;
   }
@@ -2798,6 +2888,15 @@ select{
     font-size: 10px;
   }
 
+  .lg\:text-\[40px\]{
+    font-size: 40px;
+  }
+
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:leading-\[62px\]{
     line-height: 62px;
   }
@@ -2812,6 +2911,30 @@ select{
 
   .lg\:leading-\[52px\]{
     line-height: 52px;
+  }
+
+  .lg\:leading-\[48px\]{
+    line-height: 48px;
+  }
+
+  .lg\:leading-5{
+    line-height: 1.25rem;
+  }
+
+  .lg\:leading-\[40px\]{
+    line-height: 40px;
+  }
+
+  .lg\:leading-10{
+    line-height: 2.5rem;
+  }
+
+  .lg\:leading-\[44px\]{
+    line-height: 44px;
+  }
+
+  .lg\:text-\[40\]{
+    color: 40;
   }
 
   .lg\:shadow-none{
@@ -2905,6 +3028,11 @@ select{
   .xl\:px-\[18px\]{
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .xl\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .xl\:pr-0{

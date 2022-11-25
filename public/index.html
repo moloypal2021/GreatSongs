@@ -34,7 +34,7 @@
     <div class="overflow-hidden">
         <!-- Header Section Start -->
         <header class="fixed inset-x-0 top-0 z-50 bg-white" x-data="{openNav: false}">
-            <div class="container py-5 md:py-7 xl:py-8 relative">
+            <div class="container py-3 relative">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center justify-between w-full lg:w-auto">
                         <a href="#" class="inline-block"><img src="./assets/images/greatsong-logo.svg" alt=""
@@ -52,7 +52,7 @@
                             </svg>
                         </button>
                     </div>
-                    <nav class="flex lg:items-center lg:justify-between flex-col lg:flex-row w-64 lg:w-full lg:ml-16 xl:ml-[107px] lg:static fixed inset-y-0 left-0 z-50 bg-white px-8 py-12 lg:p-0 shadow-1 lg:shadow-none space-y-5 lg:space-y-0 transition-all lg:transition-none duration-300"
+                    <nav class="flex lg:items-center lg:justify-between flex-col lg:flex-row w-64 lg:w-full lg:ml-12 lg:static fixed inset-y-0 left-0 z-50 bg-white px-8 py-12 lg:p-0 shadow-1 lg:shadow-none space-y-5 lg:space-y-0 transition-all lg:transition-none duration-300"
                         :class="openNav ? ' translate-x-0' : '-translate-x-full lg:translate-x-0'">
 
                         <button class="absolute right-4 top-4 lg:hidden" @click.prevent="openNav = false">
@@ -95,11 +95,11 @@
 
 
         <!-- Heros Section Start -->
-        <section class="mt-[100px] sm:mt-32 mb-[72px] sm:mb-20 md:mb-28 lg:mt-[138px] lg:mb-40">
+        <section class="mt-[100px] sm:mt-32 mb-[72px] md:mb-20 lg:mt-24 lg:mb-20">
             <div class="container relative lg:pb-12">
                 <div class="grid lg:grid-cols-2">
                     <div class="lg:py-10 xl:py-14 text-center lg:text-start relative z-10">
-                        <div class="text-3xl sm:text-4xl lg:text-5xl leading-[42px] sm:leading-[48px] lg:leading-[62px] font-bold font-sintony text-black mb-5 md:mb-8 max-w-md sm:max-w-lg lg:max-w-xl mx-auto lg:ml-0 transition-all duration-700 translate-y-40 opacity-0 delay-700"
+                        <div class="text-3xl sm:text-4xl lg:text-[40px] leading-[42px] sm:leading-[48px] lg:leading-[50px] font-bold font-sintony text-black mb-5 md:mb-8 max-w-md sm:max-w-lg lg:max-w-xl mx-auto lg:ml-0 transition-all duration-700 translate-y-40 opacity-0 delay-700"
                             x-data="{animate:false}" x-intersect="animate = true"
                             :class="{ '!translate-y-0 !opacity-100' : animate }">
                             <h1>Domine idiomascom o
@@ -114,7 +114,7 @@
                             </div>
                         </div>
 
-                        <p class="text-sm md:text-base font-sintony text-gray-1 max-w-lg mx-auto lg:ml-0 mb-5 md:mb-8 lg:pr-10 xl:pr-0 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
+                        <p class="text-sm md:text-sm font-sintony text-gray-1 max-w-md mx-auto lg:ml-0 mb-5 md:mb-8 lg:pr-10 xl:pr-0 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
                             x-data="{animate:false}" x-intersect="animate = true"
                             :class="{ '!translate-y-0 !opacity-100' : animate }">
                             Ouvir
@@ -130,18 +130,14 @@
                             x-data="{animate:false}" x-intersect="animate = true"
                             :class="{ '!translate-y-0 !opacity-100' : animate }">
                             <a href="#"
-                                class="inline-block text-sm sm:text-base lg:text-lg leading-[18px] lg:leading-6 font-bold font-sintony text-white bg-red-1 border border-red-1 rounded-full px-7 py-4 lg:px-[22px] lg:py-6 hover:bg-opacity-80 transition-all">Learn
+                                class="inline-block text-sm sm:text-base leading-[18px] lg:leading-5 font-bold font-sintony text-white bg-red-1 border border-red-1 rounded-full px-7 py-4 lg:px-[22px] lg:py-4 hover:bg-opacity-80 transition-all">Learn
                                 languages ​​for R$19.97/month</a>
                         </div>
                     </div>
                     <div class="lg:flex items-center">
                         <div
                             class="w-full h-full relative lg:absolute right-0 flex items-center justify-center lg:justify-end max-w-xl lg:max-w-full mx-auto">
-                            <!-- <img src="./assets/images/homepage-heros-img.png" alt=""
-                            class="w-full lg:w-7/12 xl:w-[64%] absolute mt-8 lg:mt-12 transition-all duration-500 translate-y-48 opacity-50"
-                            x-data="{animate:false}" x-intersect="animate = true"
-                            :class="{ '!translate-y-0 !opacity-100' : animate }"> -->
-                            <div class="relative w-10/12 lg:w-[55%] flex justify-center items-center">
+                            <div class="relative w-10/12 lg:w-[60%] flex justify-center items-center">
 
                                 <!-- Player -->
                                 <div class="w-full lg:w-9/12 m-auto absolute transition-all duration-500 translate-y-48 opacity-50"
@@ -167,7 +163,7 @@
 
                                         <!-- Right Side Player -->
                                         <div
-                                            class="absolute right-0 top-4 bg-white w-[47%] rounded-[20px] hidden lg:block translate-x-1/2 drop-shadow-1 pt-5 px-5 pb-3">
+                                            class="absolute right-0 top-4 bg-white w-[52%] rounded-[20px] hidden lg:block translate-x-[30%] drop-shadow-1 pt-5 px-5 pb-3">
                                             <p class="text-sm font-bold font-sintony text-gray-1 text-center mb-3.5">
                                                 Highway
                                                 to
@@ -225,7 +221,7 @@
 
                                         <!-- left Side Player -->
                                         <div
-                                            class="absolute left-0 bottom-0 bg-white w-[47%] rounded-[20px] hidden lg:block -translate-x-1/2 translate-y-1/2 drop-shadow-1 pt-3 px-4 pb-4">
+                                            class="absolute left-0 bottom-0 bg-white w-[52%] rounded-[20px] hidden lg:block -translate-x-1/2 translate-y-1/2 drop-shadow-1 pt-3 px-4 pb-4">
 
                                             <div class="flex items-start space-x-2.5 space-y-3 mb-4">
                                                 <img src="./assets/images/avater.png" alt=""
@@ -347,7 +343,7 @@
         <!-- 2nd Section Start -->
         <section class="container mb-24 lg:mb-[90px]">
             <div
-                class="max-w-[984px] mx-auto text-center text-[28px] sm:text-3xl lg:text-4xl  leading-[38px] sm:leading-[42px] lg:leading-[50px] font-bold font-manrope text-black mb-6 lg:mb-4">
+                class="max-w-3xl mx-auto text-center text-[28px] sm:text-3xl leading-[38px] sm:leading-10 font-bold font-manrope text-black mb-6 lg:mb-4">
                 O poder da
                 música oferece todos os elementos necessários
                 <div class="inline relative text-red-1 bg-gradient-to-l from-red-1/[0.15] to-red-1/[0.15] bg-no-repeat transition-all duration-700 px-0.5 delay-[1800ms]"
@@ -356,7 +352,7 @@
                     para praticar e aprender idiomas
                 </div>
             </div>
-            <p class="text-sm md:text-base text-gray-3 text-center font-sintony mb-10">Aulas online para dominar novas
+            <p class="text-sm text-gray-3 text-center font-sintony mb-10">Aulas online para dominar novas
                 línguas com a ajuda de suas música
                 preferidas</p>
 
@@ -628,7 +624,7 @@
         <!-- 3rd Section Start -->
         <section class="container mb-16 lg:mb-20">
             <div
-                class="max-w-[984px] mx-auto text-center text-[28px] sm:text-3xl lg:text-4xl  leading-[38px] sm:leading-[42px] lg:leading-[50px] font-bold font-manrope text-black mb-5 lg:mb-3">
+                class="max-w-3xl mx-auto text-center text-[28px] sm:text-3xl leading-[38px] sm:leading-[42px] ] font-bold font-manrope text-black mb-5 lg:mb-3">
                 Take
                 <div class="inline relative text-red-1 bg-gradient-to-l from-red-1/[0.15] to-red-1/[0.15] bg-no-repeat transition-all duration-700 delay-500 px-0.5"
                     x-data="{animate:false}" x-intersect="animate = true"
@@ -636,7 +632,7 @@
                     language courses
                 </div>
             </div>
-            <p class="text-sm md:text-base text-gray-3 text-center font-sintony max-w-xl mx-auto mb-9 md:mb-12">Watch
+            <p class="text-sm text-gray-3 text-center font-sintony max-w-xl mx-auto mb-9 md:mb-12">Watch
                 classes
                 wherever and whenever you want and challenge yourself to learn multiple languages.</p>
 
@@ -648,13 +644,12 @@
                             class="w-full h-full object-cover rounded-[18px] md:rounded-[30px] lg:rounded-[18px] xl:rounded-[30px]">
                     </div>
                     <div>
-                        <h4
-                            class="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-bold font-open-sans mb-2.5 md:mb-4">
+                        <h4 class="text-base sm:text-lg md:text-2xl lg:text-xl font-bold font-open-sans mb-2.5 md:mb-4">
                             Beginner English
                             Course</h4>
                         <ul class="space-y-2.5 md:space-y-4 mb-2 sm:mb-4 lg:mb-2 xl:mb-4">
-                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-1 xl:space-x-2">
-                                <svg class="w-[18px] sm:w-7 lg:w-[18px] xl:w-7" viewBox="0 0 29 29" fill="none"
+                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-2">
+                                <svg class="w-[18px] sm:w-7 lg:w-5" viewBox="0 0 29 29" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="29" height="29" rx="10" fill="#E00050" />
                                     <g clip-path="url(#clip0_106_552)">
@@ -671,13 +666,12 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p
-                                    class="text-[10px] sm:text-sm lg:text-xs xl:text-sm font-bold text-gray-3 font-sintony">
+                                <p class="text-[10px] sm:text-sm lg:text-xs font-bold text-gray-3 font-sintony">
                                     57 classes online</p>
                             </li>
 
-                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-1 xl:space-x-2">
-                                <svg class="w-[18px] sm:w-7 lg:w-[18px] xl:w-7" viewBox="0 0 19 19" fill="none"
+                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-2">
+                                <svg class="w-[18px] sm:w-7 lg:w-5" viewBox="0 0 19 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.246094" y="0.506104" width="18" height="18" rx="6.17284"
                                         fill="#E00050" />
@@ -700,13 +694,12 @@
                                     </defs>
                                 </svg>
 
-                                <p
-                                    class="text-[10px] sm:text-sm lg:text-xs xl:text-sm font-bold text-gray-3 font-sintony">
+                                <p class="text-[10px] sm:text-sm lg:text-xs font-bold text-gray-3 font-sintony">
                                     55 exercises</p>
                             </li>
 
-                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-1 xl:space-x-2">
-                                <svg class="w-[18px] sm:w-7 lg:w-[18px] xl:w-7" viewBox="0 0 19 19" fill="none"
+                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-2">
+                                <svg class="w-[18px] sm:w-7 lg:w-5" viewBox="0 0 19 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.246094" y="0.765381" width="18" height="18" rx="6.17284"
                                         fill="#E00050" />
@@ -717,18 +710,17 @@
                                         d="M12.6606 4.9043H6.45373C5.90501 4.9043 5.37876 5.12228 4.99075 5.51028C4.60275 5.89829 4.38477 6.42454 4.38477 6.97326V13.1802C4.38477 13.7289 4.60275 14.2551 4.99075 14.6431C5.37876 15.0311 5.90501 15.2491 6.45373 15.2491H12.6606C13.2093 15.2491 13.7356 15.0311 14.1236 14.6431C14.5116 14.2551 14.7296 13.7289 14.7296 13.1802V6.97326C14.7296 6.42454 14.5116 5.89829 14.1236 5.51028C13.7356 5.12228 13.2093 4.9043 12.6606 4.9043ZM8.98149 11.8674C8.95011 11.9277 8.90717 11.9811 8.85513 12.0248C8.80308 12.0685 8.74294 12.1014 8.67814 12.1218C8.61335 12.1423 8.54517 12.1497 8.47749 12.1438C8.40982 12.1378 8.34398 12.1186 8.28373 12.0872C8.05396 11.9646 7.83476 11.823 7.62839 11.6641C7.22557 12.1774 6.76843 12.6457 6.26494 13.0607C6.1589 13.1478 6.02259 13.1892 5.88602 13.1758C5.74944 13.1624 5.62377 13.0953 5.53666 12.9893C5.44955 12.8833 5.40813 12.747 5.42152 12.6104C5.43491 12.4738 5.502 12.3481 5.60804 12.261C6.07638 11.8741 6.49895 11.4348 6.86752 10.9519C6.42987 10.4366 6.11694 9.8274 5.95304 9.17154C5.92209 9.0399 5.94392 8.90138 6.01386 8.78564C6.0838 8.6699 6.19628 8.58616 6.32721 8.55234C6.45814 8.51853 6.59711 8.53733 6.71434 8.60473C6.83158 8.67213 6.91776 8.78275 6.95442 8.91292C7.04913 9.28338 7.20394 9.63582 7.4127 9.95619C7.43235 9.98619 7.45511 10.0079 7.47528 10.0374C7.52183 9.95567 7.57459 9.87861 7.61856 9.79481C8.0741 8.91484 8.36309 7.95826 8.47097 6.97326H5.93649C5.79931 6.97326 5.66775 6.91877 5.57074 6.82177C5.47374 6.72476 5.41925 6.5932 5.41925 6.45602C5.41925 6.31884 5.47374 6.18728 5.57074 6.09028C5.66775 5.99327 5.79931 5.93878 5.93649 5.93878H7.48821C7.48821 5.8016 7.54271 5.67004 7.63971 5.57303C7.73671 5.47603 7.86827 5.42154 8.00545 5.42154C8.14263 5.42154 8.2742 5.47603 8.3712 5.57303C8.4682 5.67004 8.5227 5.8016 8.5227 5.93878H10.0744C10.2116 5.93878 10.3432 5.99327 10.4402 6.09028C10.5372 6.18728 10.5917 6.31884 10.5917 6.45602C10.5917 6.5932 10.5372 6.72476 10.4402 6.82177C10.3432 6.91877 10.2116 6.97326 10.0744 6.97326H9.50545C9.3946 8.12591 9.06436 9.24672 8.53252 10.2753C8.43528 10.461 8.32563 10.6374 8.21494 10.8148C8.38613 10.9483 8.56833 11.067 8.75959 11.1696C8.82002 11.2008 8.87371 11.2436 8.91758 11.2956C8.96145 11.3476 8.99464 11.4077 9.01525 11.4725C9.03586 11.5373 9.04348 11.6055 9.03769 11.6733C9.0319 11.7411 9.0128 11.807 8.98149 11.8674ZM13.3061 14.7158C13.2403 14.7327 13.1718 14.7364 13.1046 14.7268C13.0373 14.7172 12.9726 14.6944 12.9141 14.6598C12.8557 14.6252 12.8046 14.5794 12.7639 14.525C12.7231 14.4706 12.6935 14.4087 12.6767 14.3429L12.3787 13.1802H10.3563L10.0584 14.3429C10.0414 14.4087 10.0116 14.4706 9.97075 14.5249C9.92987 14.5792 9.8787 14.6249 9.82015 14.6594C9.7616 14.694 9.69682 14.7166 9.62951 14.7261C9.56221 14.7356 9.49369 14.7318 9.42787 14.7148C9.36205 14.6978 9.30022 14.6681 9.24591 14.6272C9.1916 14.5863 9.14587 14.5351 9.11133 14.4766C9.0768 14.418 9.05414 14.3532 9.04464 14.2859C9.03514 14.2186 9.03899 14.1501 9.05597 14.0843L9.92235 10.7036C9.99883 10.376 10.1843 10.0842 10.4484 9.87587C10.7125 9.66755 11.0396 9.55514 11.3759 9.55706C11.7123 9.55899 12.038 9.67513 12.2997 9.88645C12.5614 10.0978 12.7436 10.3917 12.8163 10.7202L13.6791 14.0822C13.6966 14.1483 13.7008 14.2172 13.6914 14.285C13.6821 14.3527 13.6595 14.4179 13.6248 14.4768C13.5901 14.5358 13.5441 14.5872 13.4894 14.6282C13.4347 14.6693 13.3724 14.699 13.3061 14.7158Z"
                                         fill="#F2F2F2" />
                                 </svg>
-                                <p
-                                    class="text-[10px] sm:text-sm lg:text-xs xl:text-sm font-bold text-gray-3 font-sintony">
+                                <p class="text-[10px] sm:text-sm lg:text-xs font-bold text-gray-3 font-sintony">
                                     Class language: Portuguese</p>
                             </li>
                         </ul>
 
                         <div class="flex flex-wrap sm:flex-nowrap items-center sm:space-x-3 lg:space-x-2 xl:space-x-3">
                             <a href="#"
-                                class="px-2.5 sm:px-4 lg:px-2.5 xl:px-4 py-2 sm:py-3 lg:py-2 xl:py-3 bg-red-1 rounded-full text-[10px] sm:text-sm lg:text-[10px] xl:text-base text-white font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-opacity-80 transition-all">Learn
+                                class="px-2.5 sm:px-4 lg:px-2.5 py-2 sm:py-3 lg:py-2 bg-red-1 rounded-full text-[10px] sm:text-sm lg:text-xs text-white font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-opacity-80 transition-all">Learn
                                 English</a>
                             <a href="#"
-                                class="px-2.5 sm:px-4 lg:px-2.5 xl:px-4 py-2 sm:py-3 lg:py-2 xl:py-3 bg-white rounded-full text-[10px] sm:text-sm lg:text-[10px] xl:text-base text-black font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-red-1 hover:text-white transition-all">See
+                                class="px-2.5 sm:px-4 lg:px-2.5 py-2 sm:py-3 lg:py-2 bg-white rounded-full text-[10px] sm:text-sm lg:text-xs text-black font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-red-1 hover:text-white transition-all">See
                                 full menu</a>
                         </div>
                     </div>
@@ -740,12 +732,11 @@
                             class="w-full h-full object-cover rounded-[18px] md:rounded-[30px] lg:rounded-[18px] xl:rounded-[30px]">
                     </div>
                     <div>
-                        <h4
-                            class="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-bold font-open-sans mb-2.5 md:mb-4">
+                        <h4 class="text-base sm:text-lg md:text-2xl lg:text-xl font-bold font-open-sans mb-2.5 md:mb-4">
                             HangulLearning the Korean Alphabet</h4>
                         <ul class="space-y-2.5 md:space-y-4 mb-2 sm:mb-4 lg:mb-2 xl:mb-4">
-                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-1 xl:space-x-2">
-                                <svg class="w-[18px] sm:w-7 lg:w-[18px] xl:w-7" viewBox="0 0 29 29" fill="none"
+                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-2">
+                                <svg class="w-[18px] sm:w-7 lg:w-5" viewBox="0 0 29 29" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="29" height="29" rx="10" fill="#E00050" />
                                     <g clip-path="url(#clip0_106_552)">
@@ -762,13 +753,12 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p
-                                    class="text-[10px] sm:text-sm lg:text-xs xl:text-sm font-bold text-gray-3 font-sintony">
+                                <p class="text-[10px] sm:text-sm lg:text-xs font-bold text-gray-3 font-sintony">
                                     10 lessons online</p>
                             </li>
 
-                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-1 xl:space-x-2">
-                                <svg class="w-[18px] sm:w-7 lg:w-[18px] xl:w-7" viewBox="0 0 19 19" fill="none"
+                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-2">
+                                <svg class="w-[18px] sm:w-7 lg:w-5" viewBox="0 0 19 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.246094" y="0.506104" width="18" height="18" rx="6.17284"
                                         fill="#E00050" />
@@ -791,13 +781,12 @@
                                     </defs>
                                 </svg>
 
-                                <p
-                                    class="text-[10px] sm:text-sm lg:text-xs xl:text-sm font-bold text-gray-3 font-sintony">
+                                <p class="text-[10px] sm:text-sm lg:text-xs font-bold text-gray-3 font-sintony">
                                     9 exercises</p>
                             </li>
 
-                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-1 xl:space-x-2">
-                                <svg class="w-[18px] sm:w-7 lg:w-[18px] xl:w-7" viewBox="0 0 19 19" fill="none"
+                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-2">
+                                <svg class="w-[18px] sm:w-7 lg:w-5" viewBox="0 0 19 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.246094" y="0.765381" width="18" height="18" rx="6.17284"
                                         fill="#E00050" />
@@ -808,18 +797,17 @@
                                         d="M12.6606 4.9043H6.45373C5.90501 4.9043 5.37876 5.12228 4.99075 5.51028C4.60275 5.89829 4.38477 6.42454 4.38477 6.97326V13.1802C4.38477 13.7289 4.60275 14.2551 4.99075 14.6431C5.37876 15.0311 5.90501 15.2491 6.45373 15.2491H12.6606C13.2093 15.2491 13.7356 15.0311 14.1236 14.6431C14.5116 14.2551 14.7296 13.7289 14.7296 13.1802V6.97326C14.7296 6.42454 14.5116 5.89829 14.1236 5.51028C13.7356 5.12228 13.2093 4.9043 12.6606 4.9043ZM8.98149 11.8674C8.95011 11.9277 8.90717 11.9811 8.85513 12.0248C8.80308 12.0685 8.74294 12.1014 8.67814 12.1218C8.61335 12.1423 8.54517 12.1497 8.47749 12.1438C8.40982 12.1378 8.34398 12.1186 8.28373 12.0872C8.05396 11.9646 7.83476 11.823 7.62839 11.6641C7.22557 12.1774 6.76843 12.6457 6.26494 13.0607C6.1589 13.1478 6.02259 13.1892 5.88602 13.1758C5.74944 13.1624 5.62377 13.0953 5.53666 12.9893C5.44955 12.8833 5.40813 12.747 5.42152 12.6104C5.43491 12.4738 5.502 12.3481 5.60804 12.261C6.07638 11.8741 6.49895 11.4348 6.86752 10.9519C6.42987 10.4366 6.11694 9.8274 5.95304 9.17154C5.92209 9.0399 5.94392 8.90138 6.01386 8.78564C6.0838 8.6699 6.19628 8.58616 6.32721 8.55234C6.45814 8.51853 6.59711 8.53733 6.71434 8.60473C6.83158 8.67213 6.91776 8.78275 6.95442 8.91292C7.04913 9.28338 7.20394 9.63582 7.4127 9.95619C7.43235 9.98619 7.45511 10.0079 7.47528 10.0374C7.52183 9.95567 7.57459 9.87861 7.61856 9.79481C8.0741 8.91484 8.36309 7.95826 8.47097 6.97326H5.93649C5.79931 6.97326 5.66775 6.91877 5.57074 6.82177C5.47374 6.72476 5.41925 6.5932 5.41925 6.45602C5.41925 6.31884 5.47374 6.18728 5.57074 6.09028C5.66775 5.99327 5.79931 5.93878 5.93649 5.93878H7.48821C7.48821 5.8016 7.54271 5.67004 7.63971 5.57303C7.73671 5.47603 7.86827 5.42154 8.00545 5.42154C8.14263 5.42154 8.2742 5.47603 8.3712 5.57303C8.4682 5.67004 8.5227 5.8016 8.5227 5.93878H10.0744C10.2116 5.93878 10.3432 5.99327 10.4402 6.09028C10.5372 6.18728 10.5917 6.31884 10.5917 6.45602C10.5917 6.5932 10.5372 6.72476 10.4402 6.82177C10.3432 6.91877 10.2116 6.97326 10.0744 6.97326H9.50545C9.3946 8.12591 9.06436 9.24672 8.53252 10.2753C8.43528 10.461 8.32563 10.6374 8.21494 10.8148C8.38613 10.9483 8.56833 11.067 8.75959 11.1696C8.82002 11.2008 8.87371 11.2436 8.91758 11.2956C8.96145 11.3476 8.99464 11.4077 9.01525 11.4725C9.03586 11.5373 9.04348 11.6055 9.03769 11.6733C9.0319 11.7411 9.0128 11.807 8.98149 11.8674ZM13.3061 14.7158C13.2403 14.7327 13.1718 14.7364 13.1046 14.7268C13.0373 14.7172 12.9726 14.6944 12.9141 14.6598C12.8557 14.6252 12.8046 14.5794 12.7639 14.525C12.7231 14.4706 12.6935 14.4087 12.6767 14.3429L12.3787 13.1802H10.3563L10.0584 14.3429C10.0414 14.4087 10.0116 14.4706 9.97075 14.5249C9.92987 14.5792 9.8787 14.6249 9.82015 14.6594C9.7616 14.694 9.69682 14.7166 9.62951 14.7261C9.56221 14.7356 9.49369 14.7318 9.42787 14.7148C9.36205 14.6978 9.30022 14.6681 9.24591 14.6272C9.1916 14.5863 9.14587 14.5351 9.11133 14.4766C9.0768 14.418 9.05414 14.3532 9.04464 14.2859C9.03514 14.2186 9.03899 14.1501 9.05597 14.0843L9.92235 10.7036C9.99883 10.376 10.1843 10.0842 10.4484 9.87587C10.7125 9.66755 11.0396 9.55514 11.3759 9.55706C11.7123 9.55899 12.038 9.67513 12.2997 9.88645C12.5614 10.0978 12.7436 10.3917 12.8163 10.7202L13.6791 14.0822C13.6966 14.1483 13.7008 14.2172 13.6914 14.285C13.6821 14.3527 13.6595 14.4179 13.6248 14.4768C13.5901 14.5358 13.5441 14.5872 13.4894 14.6282C13.4347 14.6693 13.3724 14.699 13.3061 14.7158Z"
                                         fill="#F2F2F2" />
                                 </svg>
-                                <p
-                                    class="text-[10px] sm:text-sm lg:text-xs xl:text-sm font-bold text-gray-3 font-sintony">
+                                <p class="text-[10px] sm:text-sm lg:text-xs font-bold text-gray-3 font-sintony">
                                     Class language: Portuguese</p>
                             </li>
                         </ul>
 
                         <div class="flex flex-wrap sm:flex-nowrap items-center sm:space-x-3 lg:space-x-2 xl:space-x-3">
                             <a href="#"
-                                class="px-2.5 sm:px-4 lg:px-2.5 xl:px-4 py-2 sm:py-3 lg:py-2 xl:py-3 bg-red-1 rounded-full text-[10px] sm:text-sm lg:text-[10px] xl:text-base text-white font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-opacity-80 transition-all">Learn
+                                class="px-2.5 sm:px-4 lg:px-2.5 py-2 sm:py-3 lg:py-2 bg-red-1 rounded-full text-[10px] sm:text-sm lg:text-xs text-white font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-opacity-80 transition-all">Learn
                                 English</a>
                             <a href="#"
-                                class="px-2.5 sm:px-4 lg:px-2.5 xl:px-4 py-2 sm:py-3 lg:py-2 xl:py-3 bg-white rounded-full text-[10px] sm:text-sm lg:text-[10px] xl:text-base text-black font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-red-1 hover:text-white transition-all">See
+                                class="px-2.5 sm:px-4 lg:px-2.5 py-2 sm:py-3 lg:py-2 bg-white rounded-full text-[10px] sm:text-sm lg:text-xs text-black font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-red-1 hover:text-white transition-all">See
                                 full menu</a>
                         </div>
                     </div>
@@ -831,13 +819,12 @@
                             class="w-full h-full object-cover rounded-[18px] md:rounded-[30px] lg:rounded-[18px] xl:rounded-[30px]">
                     </div>
                     <div>
-                        <h4
-                            class="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-bold font-open-sans mb-2.5 md:mb-4">
+                        <h4 class="text-base sm:text-lg md:text-2xl lg:text-xl font-bold font-open-sans mb-2.5 md:mb-4">
                             Beginner English
                             Course</h4>
                         <ul class="space-y-2.5 md:space-y-4 mb-2 sm:mb-4 lg:mb-2 xl:mb-4">
-                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-1 xl:space-x-2">
-                                <svg class="w-[18px] sm:w-7 lg:w-[18px] xl:w-7" viewBox="0 0 29 29" fill="none"
+                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-2">
+                                <svg class="w-[18px] sm:w-7 lg:w-5" viewBox="0 0 29 29" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="29" height="29" rx="10" fill="#E00050" />
                                     <g clip-path="url(#clip0_106_552)">
@@ -854,13 +841,12 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p
-                                    class="text-[10px] sm:text-sm lg:text-xs xl:text-sm font-bold text-gray-3 font-sintony">
+                                <p class="text-[10px] sm:text-sm lg:text-xs font-bold text-gray-3 font-sintony">
                                     57 classes online</p>
                             </li>
 
-                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-1 xl:space-x-2">
-                                <svg class="w-[18px] sm:w-7 lg:w-[18px] xl:w-7" viewBox="0 0 19 19" fill="none"
+                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-2">
+                                <svg class="w-[18px] sm:w-7 lg:w-5" viewBox="0 0 19 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.246094" y="0.506104" width="18" height="18" rx="6.17284"
                                         fill="#E00050" />
@@ -883,13 +869,12 @@
                                     </defs>
                                 </svg>
 
-                                <p
-                                    class="text-[10px] sm:text-sm lg:text-xs xl:text-sm font-bold text-gray-3 font-sintony">
+                                <p class="text-[10px] sm:text-sm lg:text-xs font-bold text-gray-3 font-sintony">
                                     55 exercises</p>
                             </li>
 
-                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-1 xl:space-x-2">
-                                <svg class="w-[18px] sm:w-7 lg:w-[18px] xl:w-7" viewBox="0 0 19 19" fill="none"
+                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-2">
+                                <svg class="w-[18px] sm:w-7 lg:w-5" viewBox="0 0 19 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.246094" y="0.765381" width="18" height="18" rx="6.17284"
                                         fill="#E00050" />
@@ -900,18 +885,17 @@
                                         d="M12.6606 4.9043H6.45373C5.90501 4.9043 5.37876 5.12228 4.99075 5.51028C4.60275 5.89829 4.38477 6.42454 4.38477 6.97326V13.1802C4.38477 13.7289 4.60275 14.2551 4.99075 14.6431C5.37876 15.0311 5.90501 15.2491 6.45373 15.2491H12.6606C13.2093 15.2491 13.7356 15.0311 14.1236 14.6431C14.5116 14.2551 14.7296 13.7289 14.7296 13.1802V6.97326C14.7296 6.42454 14.5116 5.89829 14.1236 5.51028C13.7356 5.12228 13.2093 4.9043 12.6606 4.9043ZM8.98149 11.8674C8.95011 11.9277 8.90717 11.9811 8.85513 12.0248C8.80308 12.0685 8.74294 12.1014 8.67814 12.1218C8.61335 12.1423 8.54517 12.1497 8.47749 12.1438C8.40982 12.1378 8.34398 12.1186 8.28373 12.0872C8.05396 11.9646 7.83476 11.823 7.62839 11.6641C7.22557 12.1774 6.76843 12.6457 6.26494 13.0607C6.1589 13.1478 6.02259 13.1892 5.88602 13.1758C5.74944 13.1624 5.62377 13.0953 5.53666 12.9893C5.44955 12.8833 5.40813 12.747 5.42152 12.6104C5.43491 12.4738 5.502 12.3481 5.60804 12.261C6.07638 11.8741 6.49895 11.4348 6.86752 10.9519C6.42987 10.4366 6.11694 9.8274 5.95304 9.17154C5.92209 9.0399 5.94392 8.90138 6.01386 8.78564C6.0838 8.6699 6.19628 8.58616 6.32721 8.55234C6.45814 8.51853 6.59711 8.53733 6.71434 8.60473C6.83158 8.67213 6.91776 8.78275 6.95442 8.91292C7.04913 9.28338 7.20394 9.63582 7.4127 9.95619C7.43235 9.98619 7.45511 10.0079 7.47528 10.0374C7.52183 9.95567 7.57459 9.87861 7.61856 9.79481C8.0741 8.91484 8.36309 7.95826 8.47097 6.97326H5.93649C5.79931 6.97326 5.66775 6.91877 5.57074 6.82177C5.47374 6.72476 5.41925 6.5932 5.41925 6.45602C5.41925 6.31884 5.47374 6.18728 5.57074 6.09028C5.66775 5.99327 5.79931 5.93878 5.93649 5.93878H7.48821C7.48821 5.8016 7.54271 5.67004 7.63971 5.57303C7.73671 5.47603 7.86827 5.42154 8.00545 5.42154C8.14263 5.42154 8.2742 5.47603 8.3712 5.57303C8.4682 5.67004 8.5227 5.8016 8.5227 5.93878H10.0744C10.2116 5.93878 10.3432 5.99327 10.4402 6.09028C10.5372 6.18728 10.5917 6.31884 10.5917 6.45602C10.5917 6.5932 10.5372 6.72476 10.4402 6.82177C10.3432 6.91877 10.2116 6.97326 10.0744 6.97326H9.50545C9.3946 8.12591 9.06436 9.24672 8.53252 10.2753C8.43528 10.461 8.32563 10.6374 8.21494 10.8148C8.38613 10.9483 8.56833 11.067 8.75959 11.1696C8.82002 11.2008 8.87371 11.2436 8.91758 11.2956C8.96145 11.3476 8.99464 11.4077 9.01525 11.4725C9.03586 11.5373 9.04348 11.6055 9.03769 11.6733C9.0319 11.7411 9.0128 11.807 8.98149 11.8674ZM13.3061 14.7158C13.2403 14.7327 13.1718 14.7364 13.1046 14.7268C13.0373 14.7172 12.9726 14.6944 12.9141 14.6598C12.8557 14.6252 12.8046 14.5794 12.7639 14.525C12.7231 14.4706 12.6935 14.4087 12.6767 14.3429L12.3787 13.1802H10.3563L10.0584 14.3429C10.0414 14.4087 10.0116 14.4706 9.97075 14.5249C9.92987 14.5792 9.8787 14.6249 9.82015 14.6594C9.7616 14.694 9.69682 14.7166 9.62951 14.7261C9.56221 14.7356 9.49369 14.7318 9.42787 14.7148C9.36205 14.6978 9.30022 14.6681 9.24591 14.6272C9.1916 14.5863 9.14587 14.5351 9.11133 14.4766C9.0768 14.418 9.05414 14.3532 9.04464 14.2859C9.03514 14.2186 9.03899 14.1501 9.05597 14.0843L9.92235 10.7036C9.99883 10.376 10.1843 10.0842 10.4484 9.87587C10.7125 9.66755 11.0396 9.55514 11.3759 9.55706C11.7123 9.55899 12.038 9.67513 12.2997 9.88645C12.5614 10.0978 12.7436 10.3917 12.8163 10.7202L13.6791 14.0822C13.6966 14.1483 13.7008 14.2172 13.6914 14.285C13.6821 14.3527 13.6595 14.4179 13.6248 14.4768C13.5901 14.5358 13.5441 14.5872 13.4894 14.6282C13.4347 14.6693 13.3724 14.699 13.3061 14.7158Z"
                                         fill="#F2F2F2" />
                                 </svg>
-                                <p
-                                    class="text-[10px] sm:text-sm lg:text-xs xl:text-sm font-bold text-gray-3 font-sintony">
+                                <p class="text-[10px] sm:text-sm lg:text-xs font-bold text-gray-3 font-sintony">
                                     Class language: Portuguese</p>
                             </li>
                         </ul>
 
                         <div class="flex flex-wrap sm:flex-nowrap items-center sm:space-x-3 lg:space-x-2 xl:space-x-3">
                             <a href="#"
-                                class="px-2.5 sm:px-4 lg:px-2.5 xl:px-4 py-2 sm:py-3 lg:py-2 xl:py-3 bg-red-1 rounded-full text-[10px] sm:text-sm lg:text-[10px] xl:text-base text-white font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-opacity-80 transition-all">Learn
+                                class="px-2.5 sm:px-4 lg:px-2.5 py-2 sm:py-3 lg:py-2 bg-red-1 rounded-full text-[10px] sm:text-sm lg:text-xs text-white font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-opacity-80 transition-all">Learn
                                 English</a>
                             <a href="#"
-                                class="px-2.5 sm:px-4 lg:px-2.5 xl:px-4 py-2 sm:py-3 lg:py-2 xl:py-3 bg-white rounded-full text-[10px] sm:text-sm lg:text-[10px] xl:text-base text-black font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-red-1 hover:text-white transition-all">See
+                                class="px-2.5 sm:px-4 lg:px-2.5 py-2 sm:py-3 lg:py-2 bg-white rounded-full text-[10px] sm:text-sm lg:text-xs text-black font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-red-1 hover:text-white transition-all">See
                                 full menu</a>
                         </div>
                     </div>
@@ -923,12 +907,11 @@
                             class="w-full h-full object-cover rounded-[18px] md:rounded-[30px] lg:rounded-[18px] xl:rounded-[30px]">
                     </div>
                     <div>
-                        <h4
-                            class="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-bold font-open-sans mb-2.5 md:mb-4">
+                        <h4 class="text-base sm:text-lg md:text-2xl lg:text-xl font-bold font-open-sans mb-2.5 md:mb-4">
                             HangulLearning the Korean Alphabet</h4>
                         <ul class="space-y-2.5 md:space-y-4 mb-2 sm:mb-4 lg:mb-2 xl:mb-4">
-                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-1 xl:space-x-2">
-                                <svg class="w-[18px] sm:w-7 lg:w-[18px] xl:w-7" viewBox="0 0 29 29" fill="none"
+                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-2">
+                                <svg class="w-[18px] sm:w-7 lg:w-5" viewBox="0 0 29 29" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="29" height="29" rx="10" fill="#E00050" />
                                     <g clip-path="url(#clip0_106_552)">
@@ -945,13 +928,12 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p
-                                    class="text-[10px] sm:text-sm lg:text-xs xl:text-sm font-bold text-gray-3 font-sintony">
+                                <p class="text-[10px] sm:text-sm lg:text-xs font-bold text-gray-3 font-sintony">
                                     10 lessons online</p>
                             </li>
 
-                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-1 xl:space-x-2">
-                                <svg class="w-[18px] sm:w-7 lg:w-[18px] xl:w-7" viewBox="0 0 19 19" fill="none"
+                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-2">
+                                <svg class="w-[18px] sm:w-7 lg:w-5" viewBox="0 0 19 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.246094" y="0.506104" width="18" height="18" rx="6.17284"
                                         fill="#E00050" />
@@ -974,13 +956,12 @@
                                     </defs>
                                 </svg>
 
-                                <p
-                                    class="text-[10px] sm:text-sm lg:text-xs xl:text-sm font-bold text-gray-3 font-sintony">
+                                <p class="text-[10px] sm:text-sm lg:text-xs font-bold text-gray-3 font-sintony">
                                     9 exercises</p>
                             </li>
 
-                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-1 xl:space-x-2">
-                                <svg class="w-[18px] sm:w-7 lg:w-[18px] xl:w-7" viewBox="0 0 19 19" fill="none"
+                            <li class="flex items-center space-x-1 sm:space-x-4 lg:space-x-2">
+                                <svg class="w-[18px] sm:w-7 lg:w-5" viewBox="0 0 19 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.246094" y="0.765381" width="18" height="18" rx="6.17284"
                                         fill="#E00050" />
@@ -991,18 +972,17 @@
                                         d="M12.6606 4.9043H6.45373C5.90501 4.9043 5.37876 5.12228 4.99075 5.51028C4.60275 5.89829 4.38477 6.42454 4.38477 6.97326V13.1802C4.38477 13.7289 4.60275 14.2551 4.99075 14.6431C5.37876 15.0311 5.90501 15.2491 6.45373 15.2491H12.6606C13.2093 15.2491 13.7356 15.0311 14.1236 14.6431C14.5116 14.2551 14.7296 13.7289 14.7296 13.1802V6.97326C14.7296 6.42454 14.5116 5.89829 14.1236 5.51028C13.7356 5.12228 13.2093 4.9043 12.6606 4.9043ZM8.98149 11.8674C8.95011 11.9277 8.90717 11.9811 8.85513 12.0248C8.80308 12.0685 8.74294 12.1014 8.67814 12.1218C8.61335 12.1423 8.54517 12.1497 8.47749 12.1438C8.40982 12.1378 8.34398 12.1186 8.28373 12.0872C8.05396 11.9646 7.83476 11.823 7.62839 11.6641C7.22557 12.1774 6.76843 12.6457 6.26494 13.0607C6.1589 13.1478 6.02259 13.1892 5.88602 13.1758C5.74944 13.1624 5.62377 13.0953 5.53666 12.9893C5.44955 12.8833 5.40813 12.747 5.42152 12.6104C5.43491 12.4738 5.502 12.3481 5.60804 12.261C6.07638 11.8741 6.49895 11.4348 6.86752 10.9519C6.42987 10.4366 6.11694 9.8274 5.95304 9.17154C5.92209 9.0399 5.94392 8.90138 6.01386 8.78564C6.0838 8.6699 6.19628 8.58616 6.32721 8.55234C6.45814 8.51853 6.59711 8.53733 6.71434 8.60473C6.83158 8.67213 6.91776 8.78275 6.95442 8.91292C7.04913 9.28338 7.20394 9.63582 7.4127 9.95619C7.43235 9.98619 7.45511 10.0079 7.47528 10.0374C7.52183 9.95567 7.57459 9.87861 7.61856 9.79481C8.0741 8.91484 8.36309 7.95826 8.47097 6.97326H5.93649C5.79931 6.97326 5.66775 6.91877 5.57074 6.82177C5.47374 6.72476 5.41925 6.5932 5.41925 6.45602C5.41925 6.31884 5.47374 6.18728 5.57074 6.09028C5.66775 5.99327 5.79931 5.93878 5.93649 5.93878H7.48821C7.48821 5.8016 7.54271 5.67004 7.63971 5.57303C7.73671 5.47603 7.86827 5.42154 8.00545 5.42154C8.14263 5.42154 8.2742 5.47603 8.3712 5.57303C8.4682 5.67004 8.5227 5.8016 8.5227 5.93878H10.0744C10.2116 5.93878 10.3432 5.99327 10.4402 6.09028C10.5372 6.18728 10.5917 6.31884 10.5917 6.45602C10.5917 6.5932 10.5372 6.72476 10.4402 6.82177C10.3432 6.91877 10.2116 6.97326 10.0744 6.97326H9.50545C9.3946 8.12591 9.06436 9.24672 8.53252 10.2753C8.43528 10.461 8.32563 10.6374 8.21494 10.8148C8.38613 10.9483 8.56833 11.067 8.75959 11.1696C8.82002 11.2008 8.87371 11.2436 8.91758 11.2956C8.96145 11.3476 8.99464 11.4077 9.01525 11.4725C9.03586 11.5373 9.04348 11.6055 9.03769 11.6733C9.0319 11.7411 9.0128 11.807 8.98149 11.8674ZM13.3061 14.7158C13.2403 14.7327 13.1718 14.7364 13.1046 14.7268C13.0373 14.7172 12.9726 14.6944 12.9141 14.6598C12.8557 14.6252 12.8046 14.5794 12.7639 14.525C12.7231 14.4706 12.6935 14.4087 12.6767 14.3429L12.3787 13.1802H10.3563L10.0584 14.3429C10.0414 14.4087 10.0116 14.4706 9.97075 14.5249C9.92987 14.5792 9.8787 14.6249 9.82015 14.6594C9.7616 14.694 9.69682 14.7166 9.62951 14.7261C9.56221 14.7356 9.49369 14.7318 9.42787 14.7148C9.36205 14.6978 9.30022 14.6681 9.24591 14.6272C9.1916 14.5863 9.14587 14.5351 9.11133 14.4766C9.0768 14.418 9.05414 14.3532 9.04464 14.2859C9.03514 14.2186 9.03899 14.1501 9.05597 14.0843L9.92235 10.7036C9.99883 10.376 10.1843 10.0842 10.4484 9.87587C10.7125 9.66755 11.0396 9.55514 11.3759 9.55706C11.7123 9.55899 12.038 9.67513 12.2997 9.88645C12.5614 10.0978 12.7436 10.3917 12.8163 10.7202L13.6791 14.0822C13.6966 14.1483 13.7008 14.2172 13.6914 14.285C13.6821 14.3527 13.6595 14.4179 13.6248 14.4768C13.5901 14.5358 13.5441 14.5872 13.4894 14.6282C13.4347 14.6693 13.3724 14.699 13.3061 14.7158Z"
                                         fill="#F2F2F2" />
                                 </svg>
-                                <p
-                                    class="text-[10px] sm:text-sm lg:text-xs xl:text-sm font-bold text-gray-3 font-sintony">
+                                <p class="text-[10px] sm:text-sm lg:text-xs font-bold text-gray-3 font-sintony">
                                     Class language: Portuguese</p>
                             </li>
                         </ul>
 
                         <div class="flex flex-wrap sm:flex-nowrap items-center sm:space-x-3 lg:space-x-2 xl:space-x-3">
                             <a href="#"
-                                class="px-2.5 sm:px-4 lg:px-2.5 xl:px-4 py-2 sm:py-3 lg:py-2 xl:py-3 bg-red-1 rounded-full text-[10px] sm:text-sm lg:text-[10px] xl:text-base text-white font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-opacity-80 transition-all">Learn
+                                class="px-2.5 sm:px-4 lg:px-2.5 py-2 sm:py-3 lg:py-2 bg-red-1 rounded-full text-[10px] sm:text-sm lg:text-xs text-white font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-opacity-80 transition-all">Learn
                                 English</a>
                             <a href="#"
-                                class="px-2.5 sm:px-4 lg:px-2.5 xl:px-4 py-2 sm:py-3 lg:py-2 xl:py-3 bg-white rounded-full text-[10px] sm:text-sm lg:text-[10px] xl:text-base text-black font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-red-1 hover:text-white transition-all">See
+                                class="px-2.5 sm:px-4 lg:px-2.5 py-2 sm:py-3 lg:py-2 bg-white rounded-full text-[10px] sm:text-sm lg:text-xs text-black font-bold font-sintony border border-red-1 text-center whitespace-nowrap m-0.5 sm:m-0 hover:bg-red-1 hover:text-white transition-all">See
                                 full menu</a>
                         </div>
                     </div>
@@ -1022,11 +1002,11 @@
             <div class="relative sm:rounded-[30px] w-full overflow-hidden">
                 <div class="bg-1 absolute inset-0 w-full h-full opacity-30"></div>
                 <div class="relative px-4 pt-5 pb-12 sm:py-8 md:py-14 lg:pt-[100px] lg:pb-[90px]">
-                    <div class="max-w-[915px] mx-auto">
+                    <div class="max-w-3xl mx-auto">
                         <h1
-                            class="text-[28px] sm:text-3xl lg:text-4xl font-bold font-manrope text-red-1 text-center max-w-[804px] mx-auto mb-5 md:mb-4">
+                            class="text-[28px] sm:text-3xl font-bold font-manrope text-red-1 text-center max-w-[804px] mx-auto mb-5 md:mb-4">
                             Aprender, dominar e ter segurança com um novo idioma com Letras Academy é:</h1>
-                        <p class="text-sm md:text-base font-sintony text-gray-1 text-center mb-[30px] md:mb-10">(Isso
+                        <p class="text-sm font-sintony text-gray-1 text-center mb-[30px] md:mb-10">(Isso
                             aqui
                             só é possível
                             aprendendo idiomas
@@ -1051,7 +1031,7 @@
                         <div class="grid lg:grid-cols-2 gap-5 lg:gap-24 xl:gap-x-[115px] mb-12 md:mb-[70px]">
                             <div class="space-y-5">
                                 <div class="flex items-center space-x-2.5">
-                                    <svg class="w-5 md:w-7 shrink-0" viewBox="0 0 31 32" fill="none"
+                                    <svg class="w-5 md:w-6 shrink-0" viewBox="0 0 31 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_106_698)">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1066,11 +1046,11 @@
                                         </defs>
                                     </svg>
 
-                                    <p class="text-base md:text-lg font-bold font-sintony text-black">Acesso a
+                                    <p class="text-base font-bold font-sintony text-black">Acesso a
                                         todos os cursos e aulas (inglês, espanhol e coreano)</p>
                                 </div>
                                 <div class="flex items-center space-x-2.5">
-                                    <svg class="w-5 md:w-7 shrink-0" viewBox="0 0 31 32" fill="none"
+                                    <svg class="w-5 md:w-6 shrink-0" viewBox="0 0 31 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_106_698)">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1085,11 +1065,11 @@
                                         </defs>
                                     </svg>
 
-                                    <p class="text-base md:text-lg font-bold font-sintony text-black">3 aulas
+                                    <p class="text-base font-bold font-sintony text-black">3 aulas
                                         gratuitas para escolher o seu professor particular</p>
                                 </div>
                                 <div class="flex items-center space-x-2.5">
-                                    <svg class="w-5 md:w-7 shrink-0" viewBox="0 0 31 32" fill="none"
+                                    <svg class="w-5 md:w-6 shrink-0" viewBox="0 0 31 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_106_698)">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1104,13 +1084,13 @@
                                         </defs>
                                     </svg>
 
-                                    <p class="text-base md:text-lg font-bold font-sintony text-black">Materiais
+                                    <p class="text-base font-bold font-sintony text-black">Materiais
                                         extras para baixar e fixar o conteúdo</p>
                                 </div>
                             </div>
                             <div class="space-y-5">
                                 <div class="flex items-center space-x-2.5">
-                                    <svg class="w-5 md:w-7 shrink-0" viewBox="0 0 31 32" fill="none"
+                                    <svg class="w-5 md:w-6 shrink-0" viewBox="0 0 31 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_106_698)">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1125,11 +1105,11 @@
                                         </defs>
                                     </svg>
 
-                                    <p class="text-base md:text-lg font-bold font-sintony text-black">Acesso às
+                                    <p class="text-base font-bold font-sintony text-black">Acesso às
                                         aulas pelo computador ou celular</p>
                                 </div>
                                 <div class="flex items-center space-x-2.5">
-                                    <svg class="w-5 md:w-7 shrink-0" viewBox="0 0 31 32" fill="none"
+                                    <svg class="w-5 md:w-6 shrink-0" viewBox="0 0 31 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_106_698)">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1144,11 +1124,11 @@
                                         </defs>
                                     </svg>
 
-                                    <p class="text-base md:text-lg font-bold font-sintony text-black">Acesso ao
+                                    <p class="text-base font-bold font-sintony text-black">Acesso ao
                                         Letras sem anúncios</p>
                                 </div>
                                 <div class="flex items-center space-x-2.5">
-                                    <svg class="w-5 md:w-7 shrink-0" viewBox="0 0 31 32" fill="none"
+                                    <svg class="w-5 md:w-6 shrink-0" viewBox="0 0 31 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_106_698)">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1163,11 +1143,11 @@
                                         </defs>
                                     </svg>
 
-                                    <p class="text-base md:text-lg font-bold font-sintony text-black">Time de
+                                    <p class="text-base font-bold font-sintony text-black">Time de
                                         Sucesso do Cliente sempre à disposição</p>
                                 </div>
                                 <div class="flex items-center space-x-2.5">
-                                    <svg class="w-5 md:w-7 shrink-0" viewBox="0 0 31 32" fill="none"
+                                    <svg class="w-5 md:w-6 shrink-0" viewBox="0 0 31 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_106_698)">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1182,14 +1162,14 @@
                                         </defs>
                                     </svg>
 
-                                    <p class="text-base md:text-lg font-bold font-sintony text-black">Cursos e
+                                    <p class="text-base font-bold font-sintony text-black">Cursos e
                                         aulas sempre atualizados</p>
                                 </div>
                             </div>
                         </div>
                         <div class="text-center">
                             <a href="#"
-                                class="inline-block text-sm md:text-base text-white font-bold font-sintony text-center bg-red-1 rounded-full py-3 px-7 hover:bg-opacity-80 transition-all">Quero
+                                class="inline-block text-sm md:text-base text-white font-bold font-sintony text-center bg-red-1 rounded-full py-2.5 px-6 hover:bg-opacity-80 transition-all">Quero
                                 garantir todos os benefícios</a>
                         </div>
                     </div>
@@ -1202,12 +1182,11 @@
         <section class="container mb-11">
             <div class="">
                 <h1
-                    class="text-[28px] md:text-3xl lg:text-4xl leading-[38px] text-center font-bold font-manrope text-black mb-5 md:mb-4">
+                    class="text-[28px] md:text-3xl leading-[38px] text-center font-bold font-manrope text-black mb-5 md:mb-4">
                     Com uma só
                     assinatura, <br>
                     tenha acesso completo a todos os conteúdos!</h1>
-                <p
-                    class="text-sm md:text-base font-sintony text-gray-3 text-center max-w-[690px] mx-auto mb-[58px] lg:mb-[18px]">
+                <p class="text-sm font-sintony text-gray-3 text-center max-w-[690px] mx-auto mb-[58px] lg:mb-[18px]">
                     Tenha
                     acesso
                     imediato
@@ -1291,13 +1270,13 @@
                             <div class="bg-white rounded-[20px] shadow-1 px-5 pt-5 lg:pt-10 pb-9 lg:pb-5 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
                                 x-data="{animate:false}" x-intersect.margin.200px="animate = true"
                                 :class="{ '!translate-y-0 !opacity-100' : animate }">
-                                <div class="flex lg:flex-col items-center justify-between lg:space-y-16 mb-5 lg:mb-10">
+                                <div class="flex lg:flex-col items-center justify-between lg:space-y-12 mb-5 lg:mb-10">
                                     <div class="lg:text-center">
-                                        <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
+                                        <h1 class="text-xl sm:text-3xl font-bold font-sintony text-black">
                                             Plano
                                         </h1>
                                         <h1
-                                            class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
+                                            class="text-xl sm:text-3xl md:text-4xl lg:text-[40px] lg:leading-[44px] font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
                                             Mensal
                                         </h1>
                                     </div>
@@ -1315,7 +1294,7 @@
                                     x-data="{animate:false}" x-intersect.margin.400px="animate = true"
                                     :class="{ '!translate-y-0 !opacity-100' : animate }">
                                     <a href="#"
-                                        class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1 hover:bg-opacity-80 transition-all">Escolha
+                                        class="text-base leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-3 block text-center rounded-xl bg-red-1 hover:bg-opacity-80 transition-all">Escolha
                                         este plano</a>
                                 </div>
                             </div>
@@ -1335,14 +1314,13 @@
                                             Popular</div>
                                     </div>
                                     <div
-                                        class="flex lg:flex-col items-center justify-between lg:space-y-12 mb-5 lg:mb-[90px]">
+                                        class="flex lg:flex-col items-center justify-between lg:space-y-12 mb-5 lg:mb-16">
                                         <div class="lg:text-center">
-                                            <h1
-                                                class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
+                                            <h1 class="text-xl sm:text-3xl font-bold font-sintony text-black">
                                                 Plano
                                             </h1>
                                             <h1
-                                                class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
+                                                class="text-xl sm:text-3xl md:text-4xl lg:text-[40px] lg:leading-[44px] font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
                                                 Anual
                                             </h1>
                                         </div>
@@ -1373,20 +1351,20 @@
                                     x-data="{animate:false}" x-intersect.margin.400px="animate = true"
                                     :class="{ '!translate-y-0 !opacity-100' : animate }">
                                     <a href="#"
-                                        class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1 hover:bg-opacity-80 transition-all">Escolha
+                                        class="text-base leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-3 block text-center rounded-xl bg-red-1 hover:bg-opacity-80 transition-all">Escolha
                                         este plano</a>
                                 </div>
                             </div>
                             <div class="bg-white rounded-[20px] shadow-1 px-5 pt-5 lg:pt-10 pb-9 lg:pb-5 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
                                 x-data="{animate:false}" x-intersect.margin.200px="animate = true"
                                 :class="{ '!translate-y-0 !opacity-100' : animate }">
-                                <div class="flex lg:flex-col items-center justify-between lg:space-y-11 mb-5 lg:mb-12">
+                                <div class="flex lg:flex-col items-center justify-between lg:space-y-12 mb-5 lg:mb-9">
                                     <div class="lg:text-center">
-                                        <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold font-sintony text-black">
+                                        <h1 class="text-xl sm:text-3xl font-bold font-sintony text-black">
                                             Plano
                                         </h1>
                                         <h1
-                                            class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
+                                            class="text-xl sm:text-3xl md:text-4xl lg:text-[40px] lg:leading-[44px] font-bold font-sintony text-red-1 bg-red-1/[0.15] px-1 lg:px-2">
                                             Semestral
                                         </h1>
                                     </div>
@@ -1409,7 +1387,7 @@
                                     x-data="{animate:false}" x-intersect.margin.400px="animate = true"
                                     :class="{ '!translate-y-0 !opacity-100' : animate }">
                                     <a href="#"
-                                        class="text-lg leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-4 block text-center rounded-xl bg-red-1 hover:bg-opacity-80 transition-all">Escolha
+                                        class="text-base leading-6 text-white font-bold font-sintony px-4 py-3 lg:py-3 block text-center rounded-xl bg-red-1 hover:bg-opacity-80 transition-all">Escolha
                                         este plano</a>
                                 </div>
                             </div>
@@ -1423,16 +1401,16 @@
 
         <!-- FAQ Section Start -->
         <section class="container mb-8 md:mb-[76px]">
-            <h1 class="text-4xl font-bold font-manrope text-center text-black mb-10 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
+            <h1 class="text-3xl font-bold font-manrope text-center text-black mb-10 transition-all duration-700 translate-y-40 opacity-0 delay-1000"
                 x-data="{animate:false}" x-intersect="animate = true"
                 :class="{ '!translate-y-0 !opacity-100' : animate }">
                 Outras dúvidas</h1>
 
             <div class="space-y-4 md:space-y-5 mb-[62px] md:mb-[104px]" x-data="{openTab : 0}">
-                <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-7">
+                <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-6">
                     <div class="flex items-center justify-between space-x-6 cursor-pointer"
                         @click.prevent="openTab === 1 ? openTab = 0 : openTab = 1">
-                        <h5 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-black font-sintony">Vou
+                        <h5 class="text-sm sm:text-base md:text-lg font-bold text-black font-sintony">Vou
                             precisar pagar para usar a plataforma?</h5>
 
                         <svg class="w-3 sm:w-4 shrink-0 transition-all"
@@ -1460,10 +1438,10 @@
                     </div>
                 </div>
 
-                <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-7">
+                <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-6">
                     <div class="flex items-center justify-between space-x-6 cursor-pointer"
                         @click.prevent="openTab === 2 ? openTab = 0 : openTab = 2">
-                        <h5 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-black font-sintony">O que é
+                        <h5 class="text-sm sm:text-base md:text-lg font-bold text-black font-sintony">O que é
                             o
                             curso de idiomas do Letras Academy?</h5>
 
@@ -1492,10 +1470,10 @@
                     </div>
                 </div>
 
-                <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-7">
+                <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-6">
                     <div class="flex items-center justify-between space-x-6 cursor-pointer"
                         @click.prevent="openTab === 3 ? openTab = 0 : openTab = 3">
-                        <h5 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-black font-sintony">Como
+                        <h5 class="text-sm sm:text-base md:text-lg font-bold text-black font-sintony">Como
                             irei
                             contratar professores para aulas particulares?</h5>
 
@@ -1524,10 +1502,10 @@
                     </div>
                 </div>
 
-                <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-7">
+                <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-6">
                     <div class="flex items-center justify-between space-x-6 cursor-pointer"
                         @click.prevent="openTab === 4 ? openTab = 0 : openTab = 4">
-                        <h5 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-black font-sintony">Onde
+                        <h5 class="text-sm sm:text-base md:text-lg font-bold text-black font-sintony">Onde
                             poderei estudar?</h5>
 
                         <svg class="w-3 sm:w-4 shrink-0 transition-all"
@@ -1555,10 +1533,10 @@
                     </div>
                 </div>
 
-                <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-7">
+                <div class="w-full bg-2 backdrop-blur-[14px] rounded-[10px] p-4 md:p-6">
                     <div class="flex items-center justify-between space-x-6 cursor-pointer"
                         @click.prevent="openTab === 5 ? openTab = 0 : openTab = 5">
-                        <h5 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-black font-sintony">Como
+                        <h5 class="text-sm sm:text-base md:text-lg font-bold text-black font-sintony">Como
                             vou
                             pagar pelas aulas?</h5>
 
