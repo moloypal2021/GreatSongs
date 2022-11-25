@@ -17,6 +17,9 @@
   justify-content: center !important;
   border-radius: 9999px !important;
   background-color: #fff !important;
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+  transform: translate(-50%, -50%);
 }
 
 .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
@@ -29,12 +32,11 @@
 
 @media (max-width: 767px) {
   .video-js .vjs-big-play-button {
-    width: 48px !important;
-    height: 48px !important;
+    transform: translate(-50%, -50%) scale(0.6);
   }
-  .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
+  /* .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
     font-size: 34px !important;
     line-height: 34px !important;
     vertical-align: middle !important;
-  }
+  } */
 }
