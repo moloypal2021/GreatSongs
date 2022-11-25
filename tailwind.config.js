@@ -41,10 +41,14 @@ module.exports = {
       },
       boxShadow: {
         1: "0px 4px 30px rgba(0, 0, 0, 0.1)",
+        2: "4px 4px 11px rgba(224, 0, 80, 0.3)",
       },
       backgroundImage: {
         1: "linear-gradient(180deg, #D2C5C2 0%, #F23866 100%)",
         2: "linear-gradient(180deg, rgba(210, 197, 194, 0.3) 0%, rgba(242, 56, 102, 0.3) 100%)",
+      },
+      dropShadow: {
+        1: "15px 26px 30px rgba(188, 143, 143, 0.29)",
       },
     },
   },

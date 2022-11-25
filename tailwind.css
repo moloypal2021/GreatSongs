@@ -4,3 +4,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.vjs-poster {
+  background-size: cover !important;
+}
+
+.video-js .vjs-big-play-button {
+  width: 90px !important;
+  height: 90px !important;
+  /* display: flex !important; */
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 9999px !important;
+  background-color: #fff !important;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder::before {
+  position: relative !important;
+  color: #e00050 !important;
+  font-size: 54px !important;
+  line-height: 54px !important;
+  vertical-align: middle !important;
+}
+
+@media (max-width: 767px) {
+  .video-js .vjs-big-play-button {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
+    font-size: 34px !important;
+    line-height: 34px !important;
+    vertical-align: middle !important;
+  }
+}
