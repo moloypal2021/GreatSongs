@@ -28,7 +28,12 @@
     <!-- Header Section End -->
 
     <!-- Payment Section Start -->
-    <section class="container" x-data="{step:1, plan: 0}">
+    <section class="container" x-data="{step:1, plan: 0}" x-init="      
+        if(location.search.split('id=')[1]){
+            step = 2,
+            plan = Number(location.search.split('id=')[1]);
+        }
+    ">
 
         <!-- Pricing -->
         <div class="mb-[67px] sm:mb-20 md:mb-24 lg:mb-28 mt-[70px] sm:mt-20 md:mt-24 lg:mt-28" x-show="step === 1"
