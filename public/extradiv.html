@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .margin-box {
+            margin-top: 250px;
+        }
+
+        .card {
+            max-width: 447px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(224, 0, 80, 0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            padding: 6px;
+            font-family: 'Manrope', sans-serif;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 106px;
+            height: 60px;
+            border-radius: 10px;
+            margin-right: 12px;
+        }
+
+        .badge {
+            background: #E00050;
+            padding: 2px 6px;
+            border-radius: 6px;
+            margin-bottom: 4px;
+            color: #fff;
+            font-size: 12px;
+        }
+
+        .title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .crv-icon {
+            width: 16px;
+            margin-left: auto;
+            color: #E00050;
+            margin-right: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="margin-box">
+        <a href="#" class="card">
+            <img src="https://akamai.sscdn.co/tb/170x96/academy_courses/thumbs/unholybf-a-1669237722.png" alt=""
+                class="card-img">
+            <div>
+                <p class="badge">Black Friday - Aprenda inglês com</p>
+                <p class="title">Unholy (feat. Kim Petras)</p>
+            </div>
+
+            <svg class="crv-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </a>
+    </div>
+</body>
+
+</html>
